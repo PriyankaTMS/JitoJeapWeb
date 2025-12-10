@@ -36,6 +36,13 @@ Route::get('/', function () {
     return redirect()->route('index');
 });
 
+Route::prefix('about')->group(function(){
+    Route::get('/JITO', [WebsiteController::class, 'aboutJito'])->name('jito');
+    Route::get('/JEAP', [WebsiteController::class, 'aboutJeap'])->name('jeap');
+    Route::get('/Board-Of-Directors', [WebsiteController::class, 'boardOfDirectors'])->name('boardOfDirectors');
+    Route::get('/testimonials-and-Success-Stories', [WebsiteController::class, 'testimonialSuccessStories'])->name('testimonial&Success');
+});
+
 //Route::post('/registeruser', [RegisterController::class, 'register'])->name('registeruser');
 
 Route::get('/showmsg', [WebsiteController::class, 'showmsg'])->name('showmsg');

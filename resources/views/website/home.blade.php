@@ -1,4 +1,4 @@
-@extends('website.layout.main')
+    @extends('website.layout.main')
 @section('content')
     <section>
         <!-- Image -->
@@ -103,18 +103,6 @@
             }
         }
     </style>
-
-
-
-
-
-
-
-    <!-- Container -->
-
-    {{-- =============================Section Swiper Slider{{ asset('website/')}}============= --}}
-    <!--============================Section Book Your Ticket===========================-->
-
     <style>
         @media (max-width: 768px) {
 
@@ -138,6 +126,18 @@
             }
         }
     </style>
+
+
+
+
+
+
+    <!-- Container -->
+
+    {{-- =============================Section Swiper Slider{{ asset('website/')}}============= --}}
+    <!--============================Section Book Your Ticket===========================-->
+
+
 
     <section style="padding: 100px 0; background: #ffffff;">
         <div class="container" style="display: flex; flex-direction: column; gap: 30px;">

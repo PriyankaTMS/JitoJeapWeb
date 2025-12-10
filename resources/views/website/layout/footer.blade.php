@@ -1,5 +1,5 @@
 <!-- Section Pre Footer-->
-<section class="section section-lg bg-gray-900">
+<section class="section section-lg" style="background-color:#EBEBEB;">
     <div class="container" style=" margin-bottom: -70px;">
         <div class="row row-30">
             <div class="col-xs-10 col-lg-4 align-self-center"><a class="brand" href="{{ route('index') }}"><img
@@ -11,15 +11,15 @@
                         detail</span></h5>
                 <div>
                     <p
-                        style="margin-top:20px; margin-bottom:20px;font-family: Arial;color: #fff;font-size: 18px;font-weight: 400;">
+                        style="margin-top:20px; margin-bottom:20px;font-family: Arial;color: #2D2D2D;font-size: 18px;font-weight: 400;">
                         <span> </span>
                     </p>
                     <p class="event-detail-address big "
-                        style="font-family: Arial;color: #fff;font-size: 18px;font-weight: 400;text-align:justify;margin-top:35px;">
+                        style="font-family: Arial;color: #2D2D2D;font-size: 18px;font-weight: 400;text-align:justify;margin-top:35px;">
                         JITO is a global network of Jain business leaders promoting ethical entrepreneurship and
                         economic growth.
                     </p><a class="event-detail-link"
-                        style="font-family: Arial;color: #fff;font-size: 16px;font-weight:400;">View map
+                        style="font-family: Arial;color: #2D2D2D;font-size: 16px;font-weight:400;">View map
                         location</a>
                 </div>
             </div>
@@ -27,7 +27,7 @@
                 <h5 style="font-family: Times New Roman"><span class="big font-weight-sbold">Social Updates</span></h5>
                 <div class="event-detail">
                     <p class="event-detail-address big"
-                        style="font-family:Arial;color:#fff;font-size:18px;font-weight: 400;">You may
+                        style="font-family:Arial;color:#2D2D2D;font-size:18px;font-weight: 400;">You may
                         wonder: why this
                         event so popular? If
                         you do,
@@ -76,6 +76,12 @@
         </defs>
     </svg>
 </div>
+<script>
+    document.getElementById('dropdownToggle').addEventListener('click', function() {
+        const dropdown = document.getElementById('Dropdown');
+        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    });
+</script>
 <script src="{{ asset('website/js/core.min.js') }}"></script>
 <script src="{{ asset('website/js/script.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>

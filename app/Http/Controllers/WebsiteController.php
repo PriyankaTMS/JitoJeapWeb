@@ -25,6 +25,18 @@ class WebsiteController extends Controller
         $images = Image::get();
         return view('website.home', compact('images', 'chapters'));
     }
+    public function aboutJito(){
+        return view('website.aboutJito');
+    }
+    public function aboutJeap(){
+        return view('website.aboutJeap');
+    }
+    public function boardOfDirectors(){
+        return view('website.boardOfDirectors');
+    }
+    public function testimonialSuccessStories(){
+        return view('website.testimonialSuccessStories');
+    }
     public function book()
     {
         return view('website.book');
