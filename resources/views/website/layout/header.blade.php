@@ -20,6 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> --}}
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
@@ -42,6 +43,12 @@
             font-family: 'Material Symbols Rounded';
             font-size: 32px;
             color: #000;
+        }
+
+        .navbar-nav .nav-item.active a,
+        .navbar-nav .nav-item.active #dropdownToggle span {
+            color: #009846 !important;
+            font-weight: 600;
         }
     </style>
     <!-- Bootstrap JS and Popper.js (Bootstrap 4) -->
@@ -211,8 +218,61 @@
                                         <ul class="navbar-nav flex-md-row flex-column text-center text-md-start">
                                             <ul
                                                 class="navbar-nav flex-md-row flex-column align-items-md-center text-center text-md-start nav-link-sm">
-                                                <li class="nav-item px-md-2 py-1">
+                                                <li
+                                                    class="nav-item px-md-2 py-1 {{ request()->is('index') ? 'active' : '' }}">
                                                     <a class="nav-link text-black" href="{{ route('index') }}">HOME</a>
+                                                </li>
+                                                <li class="d-none d-md-inline text-black px-2">|</li>
+                                                <li
+                                                    class="nav-item px-md-2 py-1 position-relative {{ request()->is('about/*') ? 'active' : '' }}">
+                                                    {{-- <label for="aboutJito">ABOUT</label>
+                                                    <select id="aboutJito">
+                                                        <option value="">Select</option>
+                                                        <option value="{{ route('jito') }}">Jito</option>
+                                                    </select> --}}
+
+                                                    <div id="dropdownToggle"
+                                                        class="d-flex text-black align-items-center"
+                                                        style="cursor: pointer;">
+                                                        <span>ABOUT</span>
+                                                        <svg width="14" height="14" style="margin-left: 5px;">
+                                                            <path d="M2 4 L7 9 L12 4" stroke="black" stroke-width="2"
+                                                                fill="none" />
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul id="Dropdown"
+                                                        style="
+            list-style:none;
+            padding:10px;
+            margin:0;
+            background:white;
+            border:1px solid #ccc;
+            position:absolute;
+            top:23px;
+            left:0;
+            min-width:150px;
+            display:none;
+            z-index:999;
+        ">
+                                                        <li class="{{ request()->is('about/JITO') ? 'active' : '' }}">
+                                                            <a href="{{ route('jito') }}">Jito</a>
+                                                        </li>
+                                                        <li class="{{ request()->is('about/JEAP') ? 'active' : '' }}">
+                                                            <a href="{{ route('jeap') }}">Jeap</a>
+                                                        </li>
+                                                        <li
+                                                            class="{{ request()->is('about/Board-Of-Directors') ? 'active' : '' }}">
+                                                            <a href="{{ route('boardOfDirectors') }}">Board of
+                                                                Directors</a>
+                                                        </li>
+                                                        <li
+                                                            class="{{ request()->is('about/testimonials-and-Success-Stories') ? 'active' : '' }}">
+                                                            <a href="{{ route('testimonial&Success') }}">Our
+                                                                testimonials / Success story </a>
+                                                        </li>
+                                                    </ul>
+
                                                 </li>
                                                 <li class="d-none d-md-inline text-black px-2">|</li>
 
