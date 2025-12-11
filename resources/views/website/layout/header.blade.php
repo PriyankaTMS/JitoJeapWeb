@@ -182,7 +182,8 @@
 
                     </div>
 
-                    <div class="rd-navbar-main-outer " style="background-color: white !important;">
+                    <div class="rd-navbar-main-outer "
+                        style="background-color: white !important;box-shadow: 1px 5px 8px 2px lightgray;">
                         <div class="rd-navbar-main">
                             <!--RD Navbar Panel-->
                             <div class="rd-navbar-panel">
@@ -193,13 +194,11 @@
                                 <div class="rd-navbar-brand">
                                     <!--Brand--><a class="brand" href="{{ route('index') }}">
                                         <img class="brand-logo-dark d-block d-md-none ms-auto"
-                                            src="{{ asset('website/images/ie8-panel/ROM ZONE LOGO_C2C 1.png') }}"
-                                            srcset="{{ asset('website/images/ie8-panel/ROM ZONE LOGO_C2C 1.png') }}"
-                                            alt="Voelas" />
-                                        <img class="brand-logo-light" style="width: 194px;height:87px"
-                                            src="{{ asset('website/images/ie8-panel/ROM ZONE LOGO_C2C 1.png') }}"
-                                            srcset="{{ asset('website/images/ie8-panel/ROM ZONE LOGO_C2C 1.png') }}"
-                                            alt="Voelas" />
+                                            src="{{ asset('jitojeaplogo.png') }}"
+                                            srcset="{{ asset('jitojeaplogo.png') }}" alt="Voelas" />
+                                        <img class="brand-logo-light" style="width: 150px;height:87px"
+                                            src="{{ asset('jitojeaplogo.png') }}"
+                                            srcset="{{ asset('jitojeaplogo.png') }}" alt="Voelas" />
                                     </a>
                                 </div>
                             </div>
