@@ -343,17 +343,29 @@
                                         </a>
                                     </div>
                                     <div class="row">
-
-                                        <div class="col-6" style="background-color: #393186;">
+                                        <div class="col-6"
+                                            style="background-color: #393186;font-size: 13px;display:flex;justify-content:center;align-items:center;    padding: 19px 0px 19px 0px;">
                                             <a href="https://www.youtube.com/watch?v=video1" target="_blank">
-                                                <p style="color:white;">Watch on Youtube</p>
+                                                <span style="color:white;">Watch on <i class="bi bi-youtube"
+                                                        style="color: white;"></i> Youtube</span>
                                             </a>
                                         </div>
-                                        <div class="col-3">
-                                            <p>Watch Later</p>
+                                        <div class="col-3"
+                                            style="font-size: 10px;padding:0px;display:flex;justify-content:center;align-items:center;">
+                                            <div class="row text-center">
+                                                <div class="col-12">
+                                                    <i class="bi bi-clock-fill"></i>
+                                                </div>
+                                                <div class="col-12">
+                                                    <i class="bi bi-reply-fill"
+                                                        style="transform: scaleX(-1); display:inline-block;"></i>
+                                                    <span>Watch Later</span>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-3">
-                                            <p>share</p>
+                                        <div class="col-3"
+                                            style="font-size: 10px;padding:0px;display:flex;justify-content:center;align-items:center;">
+                                            <span>share</span>
 
                                         </div>
                                     </div>
