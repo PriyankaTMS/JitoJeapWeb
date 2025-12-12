@@ -37,6 +37,11 @@ class WebsiteController extends Controller
     public function testimonialSuccessStories(){
         return view('website.testimonialSuccessStories');
     }
+
+    public function beDonor(){
+        return view('website.beDonor');
+    }
+
     public function book()
     {
         return view('website.book');

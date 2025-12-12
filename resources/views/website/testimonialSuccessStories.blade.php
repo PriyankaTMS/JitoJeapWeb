@@ -18,6 +18,7 @@
     <style>
         .video-carousel {
             display: flex;
+            /* justify-content: center; */
             cursor: grab;
             transition: transform 0.5s ease;
         }
@@ -52,252 +53,128 @@
                     </div>
                     <div class="col-12 my-5">
                         <div class="row">
-                            <div class="col-1 d-flex justify-content-center align-items-center"
+                            <div class="col-lg-1 col-md-1 col-sm-2 col-2 d-flex justify-content-center align-items-center"
                                 style="background-color: #FFF9E6;z-index:10;">
                                 <img src="{{ asset('website/images/leftPointedArrow.png') }}" alt=""
                                     style="width: 45px;height:45px;cursor:pointer;z-index:10;" id="leftArrow">
                             </div>
-                            <div class="col-10" style="background-color: #FFF9E6;">
+                            <div class="col-lg-10 col-md-10 col-sm-8 col-8" style="background-color: #FFF9E6;">
                                 <div id="testimonialContainer" class="testimonial-slider">
-                                    <div class="testimonial-item d-flex justify-content-center align-items-center">
-                                        <div class="row position-relative"
-                                            style="background-color:#FFFFFF;border:2px solid #DCDCDC; padding: 15px;width: 80%;">
-                                            <div class="col-12 mb-2 d-flex align-items-center justify-content-center">
-                                                <div class="testOwner position-absolute"
-                                                    style="height:115px;width:115px;border-radius:50%;background-color:#FFFFFF;border:2px solid #DCDCDC;    display: flex;align-items: center;justify-content: center;">
-                                                    <img src="{{ asset('website/images/speaker-01-270x303.jpg') }}"
-                                                        alt="" class=""
-                                                        style="height:105px;width:105px;border-radius:50%;">
-                                                </div>
-                                            </div>
-                                            <div class="col-12 mb-2 mt-5 d-flex align-items-center justify-content-center">
-                                                <p>“<span
-                                                        style="color:#393186;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">Life-Changing
-                                                        Support</span>”</p>
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <p>JEAP’s assistance helped me pursue my education without financial
-                                                    stress.</p>
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <p
-                                                    style="color:#5B5B5B;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">
-                                                    Sanyukta Shah </p>
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <p>24 Dec 2024</p>
-                                            </div>
-                                            <div class="col-12 mb-2 position-absolute" style="bottom: 15px;">
-                                                <img src="{{ asset('website/images/endingQuotes.png') }}" alt=""
-                                                    style="width:48px;height:36px;position:absolute;right:43px">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-item d-flex justify-content-center align-items-center">
-                                        <div class="row position-relative"
-                                            style="background-color:#FFFFFF;border:2px solid #DCDCDC; padding: 15px;width: 80%;">
-                                            <div class="col-12 mb-2 d-flex align-items-center justify-content-center">
-                                                <div class="testOwner position-absolute"
-                                                    style="height:115px;width:115px;border-radius:50%;background-color:#FFFFFF;border:2px solid #DCDCDC;    display: flex;align-items: center;justify-content: center;">
-                                                    <img src="{{ asset('website/images/speaker-01-270x303.jpg') }}"
-                                                        alt="" class=""
-                                                        style="height:105px;width:105px;border-radius:50%;">
-                                                </div>
-                                            </div>
-                                            <div class="col-12 mb-2 mt-5 d-flex align-items-center justify-content-center">
-                                                <p>“<span
-                                                        style="color:#393186;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">Life-Changing
-                                                        Support</span>”</p>
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <p>Another great experience with JEAP.</p>
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <p
-                                                    style="color:#5B5B5B;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">
-                                                    John Doe </p>
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <p>25 Dec 2024</p>
-                                            </div>
-                                            <div class="col-12 mb-2 position-absolute" style="bottom: 15px;">
-                                                <img src="{{ asset('website/images/endingQuotes.png') }}" alt=""
-                                                    style="width:48px;height:36px;position:absolute;right:43px">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-item d-flex justify-content-center align-items-center">
-                                        <div class="row position-relative"
-                                            style="background-color:#FFFFFF;border:2px solid #DCDCDC; padding: 15px;width: 80%;">
-                                            <div class="col-12 mb-2 d-flex align-items-center justify-content-center">
-                                                <div class="testOwner position-absolute"
-                                                    style="height:115px;width:115px;border-radius:50%;background-color:#FFFFFF;border:2px solid #DCDCDC;    display: flex;align-items: center;justify-content: center;">
-                                                    <img src="{{ asset('website/images/speaker-01-270x303.jpg') }}"
-                                                        alt="" class=""
-                                                        style="height:105px;width:105px;border-radius:50%;">
-                                                </div>
-                                            </div>
-                                            <div class="col-12 mb-2 mt-5 d-flex align-items-center justify-content-center">
-                                                <p>“<span
-                                                        style="color:#393186;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">Excellent
-                                                        Service</span>”</p>
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <p>Highly satisfied with the support provided.</p>
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <p
-                                                    style="color:#5B5B5B;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">
-                                                    Jane Smith </p>
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <p>26 Dec 2024</p>
-                                            </div>
-                                            <div class="col-12 mb-2 position-absolute" style="bottom: 15px;">
-                                                <img src="{{ asset('website/images/endingQuotes.png') }}" alt=""
-                                                    style="width:48px;height:36px;position:absolute;right:43px">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Duplicate for cycling -->
-                                    <div class="testimonial-item d-flex justify-content-center align-items-center">
-                                        <div class="row position-relative"
-                                            style="background-color:#FFFFFF;border:2px solid #DCDCDC; padding: 15px;width: 80%;">
-                                            <div class="col-12 mb-2 d-flex align-items-center justify-content-center">
-                                                <div class="testOwner position-absolute"
-                                                    style="height:115px;width:115px;border-radius:50%;background-color:#FFFFFF;border:2px solid #DCDCDC;    display: flex;align-items: center;justify-content: center;">
-                                                    <img src="{{ asset('website/images/speaker-01-270x303.jpg') }}"
-                                                        alt="" class=""
-                                                        style="height:105px;width:105px;border-radius:50%;">
-                                                </div>
-                                            </div>
-                                            <div class="col-12 mb-2 mt-5 d-flex align-items-center justify-content-center">
-                                                <p>“<span
-                                                        style="color:#393186;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">Life-Changing
-                                                        Support</span>”</p>
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <p>JEAP’s assistance helped me pursue my education without financial
-                                                    stress.</p>
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <p
-                                                    style="color:#5B5B5B;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">
-                                                    Sanyukta Shah </p>
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <p>24 Dec 2024</p>
-                                            </div>
-                                            <div class="col-12 mb-2 position-absolute" style="bottom: 15px;">
-                                                <img src="{{ asset('website/images/endingQuotes.png') }}" alt=""
-                                                    style="width:48px;height:36px;position:absolute;right:43px">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Additional testimonials for longer slider -->
-                                    <div class="testimonial-item d-flex justify-content-center align-items-center">
-                                        <div class="row position-relative"
-                                            style="background-color:#FFFFFF;border:2px solid #DCDCDC; padding: 15px;width: 80%;">
-                                            <div class="col-12 mb-2 d-flex align-items-center justify-content-center">
-                                                <div class="testOwner position-absolute"
-                                                    style="height:115px;width:115px;border-radius:50%;background-color:#FFFFFF;border:2px solid #DCDCDC;    display: flex;align-items: center;justify-content: center;">
-                                                    <img src="{{ asset('website/images/speaker-01-270x303.jpg') }}"
-                                                        alt="" class=""
-                                                        style="height:105px;width:105px;border-radius:50%;">
-                                                </div>
-                                            </div>
-                                            <div class="col-12 mb-2 mt-5 d-flex align-items-center justify-content-center">
-                                                <p>“<span
-                                                        style="color:#393186;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">Great
-                                                        Opportunity</span>”</p>
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <p>JEAP opened doors for my career growth.</p>
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <p
-                                                    style="color:#5B5B5B;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">
-                                                    Alex Johnson </p>
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <p>27 Dec 2024</p>
-                                            </div>
-                                            <div class="col-12 mb-2 position-absolute" style="bottom: 15px;">
-                                                <img src="{{ asset('website/images/endingQuotes.png') }}" alt=""
-                                                    style="width:48px;height:36px;position:absolute;right:43px">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-item d-flex justify-content-center align-items-center">
-                                        <div class="row position-relative"
-                                            style="background-color:#FFFFFF;border:2px solid #DCDCDC; padding: 15px;width: 80%;">
-                                            <div class="col-12 mb-2 d-flex align-items-center justify-content-center">
-                                                <div class="testOwner position-absolute"
-                                                    style="height:115px;width:115px;border-radius:50%;background-color:#FFFFFF;border:2px solid #DCDCDC;    display: flex;align-items: center;justify-content: center;">
-                                                    <img src="{{ asset('website/images/speaker-01-270x303.jpg') }}"
-                                                        alt="" class=""
-                                                        style="height:105px;width:105px;border-radius:50%;">
-                                                </div>
-                                            </div>
-                                            <div class="col-12 mb-2 mt-5 d-flex align-items-center justify-content-center">
-                                                <p>“<span
-                                                        style="color:#393186;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">Supportive
-                                                        Community</span>”</p>
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <p>JEAP’s network is invaluable for businessmen.</p>
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <p
-                                                    style="color:#5B5B5B;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">
-                                                    Michael Lee </p>
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <p>28 Dec 2024</p>
-                                            </div>
-                                            <div class="col-12 mb-2 position-absolute" style="bottom: 15px;">
-                                                <img src="{{ asset('website/images/endingQuotes.png') }}" alt=""
-                                                    style="width:48px;height:36px;position:absolute;right:43px">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-item d-flex justify-content-center align-items-center">
-                                        <div class="row position-relative"
-                                            style="background-color:#FFFFFF;border:2px solid #DCDCDC; padding: 15px;width: 80%;">
-                                            <div class="col-12 mb-2 d-flex align-items-center justify-content-center">
-                                                <div class="testOwner position-absolute"
-                                                    style="height:115px;width:115px;border-radius:50%;background-color:#FFFFFF;border:2px solid #DCDCDC;    display: flex;align-items: center;justify-content: center;">
-                                                    <img src="{{ asset('website/images/speaker-01-270x303.jpg') }}"
-                                                        alt="" class=""
-                                                        style="height:105px;width:105px;border-radius:50%;">
-                                                </div>
-                                            </div>
-                                            <div class="col-12 mb-2 mt-5 d-flex align-items-center justify-content-center">
-                                                <p>“<span
-                                                        style="color:#393186;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">Inspiring
-                                                        Growth</span>”</p>
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <p>JEAP inspires continuous professional development.</p>
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <p
-                                                    style="color:#5B5B5B;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">
-                                                    Priya Patel </p>
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <p>29 Dec 2024</p>
-                                            </div>
-                                            <div class="col-12 mb-2 position-absolute" style="bottom: 15px;">
-                                                <img src="{{ asset('website/images/endingQuotes.png') }}" alt=""
-                                                    style="width:48px;height:36px;position:absolute;right:43px">
-                                            </div>
-                                        </div>
-                                    </div>
 
+                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                        <div class="testimonial-item d-flex justify-content-center align-items-center">
+                                            <div class="row position-relative"
+                                                style="background-color:#FFFFFF;border:2px solid #DCDCDC; padding: 15px;width: 80%;">
+                                                <div class="col-12 mb-2 d-flex align-items-center justify-content-center">
+                                                    <div class="testOwner position-absolute"
+                                                        style="height:115px;width:115px;border-radius:50%;background-color:#FFFFFF;border:2px solid #DCDCDC;    display: flex;align-items: center;justify-content: center;">
+                                                        <img src="{{ asset('website/images/speaker-01-270x303.jpg') }}"
+                                                            alt="" class=""
+                                                            style="height:105px;width:105px;border-radius:50%;">
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-12 mb-2 mt-5 d-flex align-items-center justify-content-center">
+                                                    <p>“<span
+                                                            style="color:#393186;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">Life-Changing
+                                                            Support</span>”</p>
+                                                </div>
+                                                <div class="col-12 mb-2">
+                                                    <p>JEAP’s assistance helped me pursue my education without financial
+                                                        stress.</p>
+                                                </div>
+                                                <div class="col-12 mb-2">
+                                                    <p
+                                                        style="color:#5B5B5B;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">
+                                                        Sanyukta Shah </p>
+                                                </div>
+                                                <div class="col-12 mb-2">
+                                                    <p>24 Dec 2024</p>
+                                                </div>
+                                                <div class="col-12 mb-2 position-absolute" style="bottom: 15px;">
+                                                    <img src="{{ asset('website/images/endingQuotes.png') }}" alt=""
+                                                        style="width:48px;height:36px;position:absolute;right:43px">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                        <div class="testimonial-item d-flex justify-content-center align-items-center">
+                                            <div class="row position-relative"
+                                                style="background-color:#FFFFFF;border:2px solid #DCDCDC; padding: 15px;width: 80%;">
+                                                <div class="col-12 mb-2 d-flex align-items-center justify-content-center">
+                                                    <div class="testOwner position-absolute"
+                                                        style="height:115px;width:115px;border-radius:50%;background-color:#FFFFFF;border:2px solid #DCDCDC;    display: flex;align-items: center;justify-content: center;">
+                                                        <img src="{{ asset('website/images/speaker-01-270x303.jpg') }}"
+                                                            alt="" class=""
+                                                            style="height:105px;width:105px;border-radius:50%;">
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-12 mb-2 mt-5 d-flex align-items-center justify-content-center">
+                                                    <p>“<span
+                                                            style="color:#393186;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">Life-Changing
+                                                            Support</span>”</p>
+                                                </div>
+                                                <div class="col-12 mb-2">
+                                                    <p>JEAP’s assistance helped me pursue my education without financial
+                                                        stress.</p>
+                                                </div>
+                                                <div class="col-12 mb-2">
+                                                    <p
+                                                        style="color:#5B5B5B;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">
+                                                        Sanyukta Shah </p>
+                                                </div>
+                                                <div class="col-12 mb-2">
+                                                    <p>24 Dec 2024</p>
+                                                </div>
+                                                <div class="col-12 mb-2 position-absolute" style="bottom: 15px;">
+                                                    <img src="{{ asset('website/images/endingQuotes.png') }}" alt=""
+                                                        style="width:48px;height:36px;position:absolute;right:43px">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                        <div class="testimonial-item d-flex justify-content-center align-items-center">
+                                            <div class="row position-relative"
+                                                style="background-color:#FFFFFF;border:2px solid #DCDCDC; padding: 15px;width: 80%;">
+                                                <div class="col-12 mb-2 d-flex align-items-center justify-content-center">
+                                                    <div class="testOwner position-absolute"
+                                                        style="height:115px;width:115px;border-radius:50%;background-color:#FFFFFF;border:2px solid #DCDCDC;    display: flex;align-items: center;justify-content: center;">
+                                                        <img src="{{ asset('website/images/speaker-01-270x303.jpg') }}"
+                                                            alt="" class=""
+                                                            style="height:105px;width:105px;border-radius:50%;">
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-12 mb-2 mt-5 d-flex align-items-center justify-content-center">
+                                                    <p>“<span
+                                                            style="color:#393186;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">Life-Changing
+                                                            Support</span>”</p>
+                                                </div>
+                                                <div class="col-12 mb-2">
+                                                    <p>JEAP’s assistance helped me pursue my education without financial
+                                                        stress.</p>
+                                                </div>
+                                                <div class="col-12 mb-2">
+                                                    <p
+                                                        style="color:#5B5B5B;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">
+                                                        Sanyukta Shah </p>
+                                                </div>
+                                                <div class="col-12 mb-2">
+                                                    <p>24 Dec 2024</p>
+                                                </div>
+                                                <div class="col-12 mb-2 position-absolute" style="bottom: 15px;">
+                                                    <img src="{{ asset('website/images/endingQuotes.png') }}" alt=""
+                                                        style="width:48px;height:36px;position:absolute;right:43px">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-1 d-flex justify-content-center align-items-center"
+                            <div class="col-lg-1 col-md-1 col-sm-2 col-2 d-flex justify-content-center align-items-center"
                                 style="background-color: #FFF9E6;z-index:10;">
                                 <img src="{{ asset('website/images/rightPointedArrow.png') }}" alt=""
                                     style="width: 45px;height:45px;cursor:pointer;z-index:10;" id="rightArrow">
@@ -326,56 +203,74 @@
                             </h2>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <div id="videoCarousel" class="video-carousel">
+
+                </div>
+                <div class="row">
+                    <div id="videoCarousel" class="video-carousel">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center">
                             <div class="video-item">
-                                <div class="p-3" style="width:280px;height:254px;border:1px solid #ccc;">
+                                <div class="p-3" style="width:280px;height:195px;border:1px solid #ccc;">
                                     <div class="col-12" style="display:flex;align-items:center;justify-content:center;">
-                                        <a href="https://www.youtube.com/watch?v=video1" target="_blank"
-                                            style="text-decoration:none;color:#393186;">
-
-                                            <div class="col-12 thumbnail"
-                                                style="width:240px;height:130px;border:1px solid #ccc;display:flex;align-items:center;justify-content:center;background:url('{{ asset('website/images/speaker-05-270x303.jpg') }}')  center center /cover no-repeat;">
-                                                <img src="{{ asset('website/images/youtubePlayButton.png') }}"
-                                                    alt="" style="width:52px;height:auto;">
-                                            </div>
-
-                                        </a>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6"
-                                            style="background-color: #393186;font-size: 13px;display:flex;justify-content:center;align-items:center;    padding: 19px 0px 19px 0px;">
-                                            <a href="https://www.youtube.com/watch?v=video1" target="_blank">
-                                                <span style="color:white;">Watch on <i class="bi bi-youtube"
-                                                        style="color: white;"></i> Youtube</span>
-                                            </a>
-                                        </div>
-                                        <div class="col-3"
-                                            style="font-size: 10px;padding:0px;display:flex;justify-content:center;align-items:center;">
-                                            <div class="row text-center">
-                                                <div class="col-12">
-                                                    <i class="bi bi-clock-fill"></i>
-                                                </div>
-                                                <div class="col-12">
-                                                    <i class="bi bi-reply-fill"
-                                                        style="transform: scaleX(-1); display:inline-block;"></i>
-                                                    <span>Watch Later</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-3"
-                                            style="font-size: 10px;padding:0px;display:flex;justify-content:center;align-items:center;">
-                                            <span>share</span>
-
-                                        </div>
+                                        <iframe loading="lazy"
+                                            title="JIN Reflexology Feedback - Perfect Diagnosis at Jodhpur" width="240"
+                                            height="157" src="https://www.youtube.com/embed/fA8uEVODBVA?feature=oembed"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen>
+                                        </iframe>
                                     </div>
                                 </div>
                             </div>
-
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center">
+                            <div class="video-item">
+                                <div class="p-3" style="width:280px;height:195px;border:1px solid #ccc;">
+                                    <div class="col-12" style="display:flex;align-items:center;justify-content:center;">
+                                        <iframe loading="lazy"
+                                            title="JIN Reflexology Feedback - Perfect Diagnosis at Jodhpur" width="240"
+                                            height="157" src="https://www.youtube.com/embed/fA8uEVODBVA?feature=oembed"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center">
+                            <div class="video-item">
+                                <div class="p-3" style="width:280px;height:195px;border:1px solid #ccc;">
+                                    <div class="col-12" style="display:flex;align-items:center;justify-content:center;">
+                                        <iframe loading="lazy"
+                                            title="JIN Reflexology Feedback - Perfect Diagnosis at Jodhpur" width="240"
+                                            height="157" src="https://www.youtube.com/embed/fA8uEVODBVA?feature=oembed"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center">
+                            <div class="video-item">
+                                <div class="p-3" style="width:280px;height:195px;border:1px solid #ccc;">
+                                    <div class="col-12" style="display:flex;align-items:center;justify-content:center;">
+                                        <iframe loading="lazy"
+                                            title="JIN Reflexology Feedback - Perfect Diagnosis at Jodhpur" width="240"
+                                            height="157" src="https://www.youtube.com/embed/fA8uEVODBVA?feature=oembed"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 

@@ -229,12 +229,6 @@
                                                 <li class="d-none d-md-inline text-black px-2">|</li>
                                                 <li
                                                     class="nav-item px-md-2 py-1 position-relative {{ request()->is('about/*') ? 'active' : '' }}">
-                                                    {{-- <label for="aboutJito">ABOUT</label>
-                                                    <select id="aboutJito">
-                                                        <option value="">Select</option>
-                                                        <option value="{{ route('jito') }}">Jito</option>
-                                                    </select> --}}
-
                                                     <div id="dropdownToggle"
                                                         class="d-flex text-black align-items-center"
                                                         style="cursor: pointer;">
@@ -276,7 +270,40 @@
                                                                 testimonials / Success story </a>
                                                         </li>
                                                     </ul>
+                                                </li>
+                                                <li class="d-none d-md-inline text-black px-2">|</li>
+                                                <li class="nav-item px-md-2 py-1 position-relative">
+                                                    <div id="donorDropdownToggle"
+                                                        class="d-flex text-black align-items-center"
+                                                        style="cursor: pointer;">
+                                                        <span>DONOR</span>
+                                                        <svg width="14" height="14" style="margin-left: 5px;">
+                                                            <path d="M2 4 L7 9 L12 4" stroke="black" stroke-width="2"
+                                                                fill="none" />
+                                                        </svg>
+                                                    </div>
 
+                                                    <ul id="donorDropdown"
+                                                        style="
+            list-style:none;
+            padding:10px;
+            margin:0;
+            background:white;
+            border:1px solid #ccc;
+            position:absolute;
+            top:23px;
+            left:0;
+            min-width:150px;
+            display:none;
+            z-index:999;
+        ">
+                                                        <li class="">
+                                                            <a href="{{route('beDonor')}}">BE A DONOR</a>
+                                                        </li>
+                                                        <li class="">
+                                                            <a href="#">Our Donors</a>
+                                                        </li>
+                                                    </ul>
                                                 </li>
                                                 <li class="d-none d-md-inline text-black px-2">|</li>
 
@@ -302,111 +329,6 @@
                                                     <a class="nav-link text-black"
                                                         href="{{ route('contact') }}">CONTACTS</a>
                                                 </li>
-                                                {{-- <li class="nav-item px-md-2 py-1"> --}}
-                                                {{-- <li class="nav-item px-md-2 py-1 d-block d-md-none">
-                                                    <div class="rd-navbar-collapse">
-                                                        @if (!Auth::check())
-                                                            <div class="d-flex align-items-center" style="gap: 10px;">
-                                                                <a class="btn btn-outline-secondary btn-lg px-4 py-2"
-                                                                    href="{{ route('login') }}"
-                                                                    style="padding: 6px 14px; border-radius: 6px ; border-color: gray; font-weight: 500; width: 140px; height: 40px;">Login</a>
-                                                                <a class="btn btn-success"
-                                                                    href="{{ route('register') }}"
-                                                                    style="padding: 6px 14px; border-radius: 6px; font-weight: 500;width: 140px; height: 40px;">Register</a>
-                                                            </div>
-                                                        @else
-                                                            <div class="">
-                                                                <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic"
-                                                                    href="{{ route('myprofile') }}"
-                                                                    id="navbarDropdown" role="button"
-                                                                    data-bs-toggle="dropdown" aria-expanded="false">
-
-                                                                    <img src="{{ Auth::user()->image ? asset('roaster/' . Auth::user()->image) : asset('website/images/defaultuser.png') }}"
-                                                                        alt="user" class="rounded-circle"
-                                                                        style="width: 30px; height:30px;" />
-                                                                    <span style="color: #000;"
-                                                                        class="username-text ">{{ Auth::user()->name }}</span>
-                                                                </a>
-                                                                <ul class="dropdown-menu dropdown-menu-end user-dd animated"
-                                                                    aria-labelledby="navbarDropdown">
-                                                                    <!-- View Profile -->
-                                                                    <li><a class="dropdown-item"
-                                                                            href="{{ route('myprofile') }}"><i
-                                                                                class="mdi mdi-account me-1 ms-1"></i>
-                                                                            View
-                                                                            Profile</a>
-                                                                    </li>
-                                                                    <!-- Change Password -->
-                                                                    <li>
-                                                                        <a class="dropdown-item" href="#"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target="#changePasswordModal">
-                                                                            <i class="mdi mdi-key me-1 ms-1"></i>
-                                                                            Change
-                                                                            Password
-                                                                        </a>
-                                                                    </li>
-                                                                    <!-- Logout -->
-                                                                    <li><a class="dropdown-item"
-                                                                            href="{{ route('logout') }}"
-                                                                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                                                            <i class="fa fa-power-off me-1 ms-1"></i>
-                                                                            Logout</a></li>
-                                                                    <form id="logout-form"
-                                                                        action="{{ route('logout') }}" method="POST"
-                                                                        class="d-none">
-                                                                        @csrf
-                                                                    </form>
-                                                                </ul>
-                                                            </div>
-                                                            <!-- Change Password Modal -->
-                                                            <div class="modal fade" id="changePasswordModal"
-                                                                tabindex="-1"
-                                                                aria-labelledby="changePasswordModalLabel"
-                                                                aria-hidden="true">
-                                                                <div class="modal-dialog">
-                                                                    <div class="modal-content">
-                                                                        <div class="modal-header">
-                                                                            <h5 class="modal-title"
-                                                                                id="changePasswordModalLabel">
-                                                                                Change Password</h5>
-                                                                            <button type="button" class="btn-close"
-                                                                                data-bs-dismiss="modal"
-                                                                                aria-label="Close"></button>
-                                                                        </div>
-                                                                        <div class="modal-body">
-                                                                            <form
-                                                                                action="{{ route('change_password', Auth::user()->id) }}"
-                                                                                method="POST"
-                                                                                id="changePasswordForm">
-                                                                                @csrf
-                                                                                <div class="mb-3">
-                                                                                    <label for="newPassword"
-                                                                                        class="form-label">New
-                                                                                        Password</label>
-                                                                                    <input type="password"
-                                                                                        name="password"
-                                                                                        class="form-control"
-                                                                                        id="newPassword" required>
-                                                                                </div>
-
-                                                                            </form>
-                                                                        </div>
-                                                                        <div class="modal-footer">
-                                                                            <button type="button"
-                                                                                class="btn btn-secondary"
-                                                                                data-bs-dismiss="modal">Close</button>
-                                                                            <!-- Save Button will now submit the form -->
-                                                                            <button type="submit"
-                                                                                class="btn btn-primary"
-                                                                                form="changePasswordForm">Save</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        @endif
-                                                    </div>
-                                                </li> --}}
                                                 <!-- Visible only on small devices -->
                                                 <div class="d-block d-md-none">
                                                     @if (!Auth::check())
@@ -449,7 +371,6 @@
                                                         </div>
                                                     @endif
                                                 </div>
-
                                             </ul>
                                 </div>
                             </div>
