@@ -81,6 +81,11 @@
         const dropdown = document.getElementById('Dropdown');
         dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
     });
+
+    document.getElementById('donorDropdownToggle').addEventListener('click', function() {
+        const dropdown = document.getElementById('donorDropdown');
+        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    });
 </script>
 <script src="{{ asset('website/js/core.min.js') }}"></script>
 <script src="{{ asset('website/js/script.js') }}"></script>

@@ -42,6 +42,9 @@ Route::prefix('about')->group(function(){
     Route::get('/Board-Of-Directors', [WebsiteController::class, 'boardOfDirectors'])->name('boardOfDirectors');
     Route::get('/testimonials-and-Success-Stories', [WebsiteController::class, 'testimonialSuccessStories'])->name('testimonial&Success');
 });
+Route::prefix('donors')->group(function(){
+    Route::get('/be-a-donor', [WebsiteController::class, 'beDonor'])->name('beDonor');
+});
 
 //Route::post('/registeruser', [RegisterController::class, 'register'])->name('registeruser');
 
