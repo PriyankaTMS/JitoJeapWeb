@@ -50,6 +50,10 @@
             color: #009846 !important;
             font-weight: 600;
         }
+
+        .body {
+            font-family: 'Poppins', sans-serif !important;
+        }
     </style>
     <!-- Bootstrap JS and Popper.js (Bootstrap 4) -->
 
