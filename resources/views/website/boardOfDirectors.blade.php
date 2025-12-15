@@ -6,111 +6,238 @@
 
             <!-- About Us Section -->
             <div class="text-image-wrapper row align-items-center" style="">
-                <div class="col-lg-7 col-md-7 col-12">
+                <div style="display: flex; align-items: center; flex-direction: row; gap: 15px;">
+                    <div style="width: 3px; height: 40px; background-color: #E31E25;"></div>
+                    <h2 style="font-size: 36px; font-weight: bold; font-family: 'Times New Roman', Times, serif; margin: 0;">
+                        <span style="color: #FFD800;">BOARD</span> <span style="color: #393186;">OF
+                            DIRECTORS</span>
+                    </h2>
+                </div>
+                <div class="col-md-12 mt-4">
                     <div class="row">
-                        <div class="col-12 m">
 
-                            <!-- Text -->
-                            <div style="flex: 1 1 50%; max-width: 700px;">
-                                <div style="display: flex; align-items: center; flex-direction: row; gap: 15px;">
-                                    <div style="width: 3px; height: 40px; background-color: #E31E25;"></div>
-                                    <h2
-                                        style="font-size: 36px; font-weight: bold; font-family: 'Times New Roman', Times, serif; margin: 0;">
-                                        <span style="color: #FFD800;">BOARD</span> <span style="color: #393186;">OF DIRECTORS</span>
-                                    </h2>
+                        <div class="col-md-3 mt-4 ">
+
+                            <div class="card"
+                                style="width: 85%; margin: 0 auto; background: white; border-radius: 0px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding: 20px;border:1px solid #D7D7D7;">
+                                <div
+                                    style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.2); border: 2px solid #ccc;">
+                                    <img src="{{ asset('website/images/wc11.png') }}" alt="Photo"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
                                 </div>
-                                <div class="my-3"
-                                    style="display: flex; align-items: center; flex-direction: row; gap: 15px;">
-                                    <span
-                                        style="font-size: 32px;color: #5B5B5B; font-weight: 400; font-family: 'Times New Roman', Times, serif; margin: 0;">
-                                        Empowering Futures : Our Journey
-                                    </span>
-                                </div>
-                                <p
-                                    style="font-size: 18px; line-height: 1.6; margin-top: 20px; font-family: Poppins; color: #5B5B5B; text-align: justify;">
-                                    We are committed to empowering deserving, needy, and meritorious students to pursue
-                                    higher education in India and abroad. Through financial assistance and essential
-                                    resources, we enable them to access top-tier institutions and unlock their true
-                                    potential.
+                                <h3
+                                    style="font-size: 16px; font-weight: 600; color: #393186; margin-bottom: -4px;font-family: 'Poppins', sans-serif !important; text-transform: none !important;">
+                                    Hitesh Doshi
+                                </h3>
+                                <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
+                                    Designation 1
                                 </p>
-
-
+                                <a href="#" style="font-size: 16px;  color: #FFD800; text-decoration:underline;">Show
+                                    more</a>
                             </div>
-                        </div>
 
-                        <div class="col-12 mt-5">
-                            <div class="" style="display: flex; align-items: center; flex-direction: row; gap: 15px;">
-                                <div style="width: 6px;height: 6px;border-radius: 50%; background-color: #FFD800;">
+                        </div>
+                        <div class="col-md-3 mt-4 ">
+
+                            <div class="card"
+                                style="width: 85%; margin: 0 auto; background: white; border-radius: 0px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding: 20px;border:1px solid #D7D7D7;">
+                                <div
+                                    style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.2); border: 2px solid #ccc;">
+                                    <img src="{{ asset('website/images/wc11.png') }}" alt="Photo"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
                                 </div>
-                                <h2 style="font-size: 18px; font-weight: bold; font-family: Poppins; margin: 0;">
-                                    <span style="color: #FFD800;">VISION</span> <span style="color: #393186;">OF
-                                        JEAP</span>
-                                </h2>
+                                <h3
+                                    style="font-size: 16px; font-weight: 600; color: #393186; margin-bottom: -4px;font-family: 'Poppins', sans-serif !important; text-transform: none !important;">
+                                    Hitesh Doshi
+                                </h3>
+                                <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
+                                    Designation 1
+                                </p>
+                                <a href="#" style="font-size: 16px;  color: #FFD800; text-decoration:underline;">Show
+                                    more</a>
                             </div>
-                            <p
-                                style="font-size: 18px; line-height: 1.6; margin-top: 20px; font-family: Poppins; color: #5B5B5B; text-align: justify;">
-                                Aligned with JITO’s overarching vision, JEAP (JITO Education Assistance Program) was
-                                established with a dedicated focus on uplifting Jain students through quality
-                                education and meaningful opportunities.
-                            </p>
 
                         </div>
-                        <div class="col-12 mt-5">
-                            <div class="" style="display: flex; align-items: center; flex-direction: row; gap: 15px;">
-                                <div style="width: 6px;height: 6px;border-radius: 50%; background-color: #FFD800;">
+                        <div class="col-md-3 mt-4 ">
+
+                            <div class="card"
+                                style="width: 85%; margin: 0 auto; background: white; border-radius: 0px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding: 20px;border:1px solid #D7D7D7;">
+                                <div
+                                    style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.2); border: 2px solid #ccc;">
+                                    <img src="{{ asset('website/images/wc11.png') }}" alt="Photo"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
                                 </div>
-                                <h2 style="font-size: 18px; font-weight: bold; font-family: Poppins; margin: 0;">
-                                    <span style="color: #FFD800;">MISSION</span> <span style="color: #393186;">OF
-                                        JEAP</span>
-                                </h2>
+                                <h3
+                                    style="font-size: 16px; font-weight: 600; color: #393186; margin-bottom: -4px;font-family: 'Poppins', sans-serif !important; text-transform: none !important;">
+                                    Hitesh Doshi
+                                </h3>
+                                <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
+                                    Designation 1
+                                </p>
+                                <a href="#" style="font-size: 16px;  color: #FFD800; text-decoration:underline;">Show
+                                    more</a>
                             </div>
-                            <p
-                                style="font-size: 18px; line-height: 1.6; margin-top: 20px; font-family: Poppins; color: #5B5B5B; text-align: justify;">
-                                Aligned with JITO’s overarching vision, JEAP (JITO Education Assistance Program) was
-                                established with a dedicated focus on uplifting Jain students through quality
-                                education and meaningful opportunities.
-                            </p>
 
                         </div>
+                        <div class="col-md-3 mt-4 ">
+
+                            <div class="card"
+                                style="width: 85%; margin: 0 auto; background: white; border-radius: 0px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding: 20px;border:1px solid #D7D7D7;">
+                                <div
+                                    style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.2); border: 2px solid #ccc;">
+                                    <img src="{{ asset('website/images/wc11.png') }}" alt="Photo"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <h3
+                                    style="font-size: 16px; font-weight: 600; color: #393186; margin-bottom: -4px;font-family: 'Poppins', sans-serif !important; text-transform: none !important;">
+                                    Hitesh Doshi
+                                </h3>
+                                <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
+                                    Designation 1
+                                </p>
+                                <a href="#" style="font-size: 16px;  color: #FFD800; text-decoration:underline;">Show
+                                    more</a>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 mt-4 ">
+
+                            <div class="card"
+                                style="width: 85%; margin: 0 auto; background: white; border-radius: 0px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding: 20px;border:1px solid #D7D7D7;">
+                                <div
+                                    style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.2); border: 2px solid #ccc;">
+                                    <img src="{{ asset('website/images/wc11.png') }}" alt="Photo"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <h3
+                                    style="font-size: 16px; font-weight: 600; color: #393186; margin-bottom: -4px;font-family: 'Poppins', sans-serif !important; text-transform: none !important;">
+                                    Hitesh Doshi
+                                </h3>
+                                <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
+                                    Designation 1
+                                </p>
+                                <a href="#" style="font-size: 16px;  color: #FFD800; text-decoration:underline;">Show
+                                    more</a>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 mt-4 ">
+
+                            <div class="card"
+                                style="width: 85%; margin: 0 auto; background: white; border-radius: 0px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding: 20px;border:1px solid #D7D7D7;">
+                                <div
+                                    style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.2); border: 2px solid #ccc;">
+                                    <img src="{{ asset('website/images/wc11.png') }}" alt="Photo"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <h3
+                                    style="font-size: 16px; font-weight: 600; color: #393186; margin-bottom: -4px;font-family: 'Poppins', sans-serif !important; text-transform: none !important;">
+                                    Hitesh Doshi
+                                </h3>
+                                <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
+                                    Designation 1
+                                </p>
+                                <a href="#" style="font-size: 16px;  color: #FFD800; text-decoration:underline;">Show
+                                    more</a>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 mt-4 ">
+
+                            <div class="card"
+                                style="width: 85%; margin: 0 auto; background: white; border-radius: 0px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding: 20px;border:1px solid #D7D7D7;">
+                                <div
+                                    style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.2); border: 2px solid #ccc;">
+                                    <img src="{{ asset('website/images/wc11.png') }}" alt="Photo"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <h3
+                                    style="font-size: 16px; font-weight: 600; color: #393186; margin-bottom: -4px;font-family: 'Poppins', sans-serif !important; text-transform: none !important;">
+                                    Hitesh Doshi
+                                </h3>
+                                <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
+                                    Designation 1
+                                </p>
+                                <a href="#" style="font-size: 16px;  color: #FFD800; text-decoration:underline;">Show
+                                    more</a>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 mt-4 ">
+
+                            <div class="card"
+                                style="width: 85%; margin: 0 auto; background: white; border-radius: 0px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding: 20px;border:1px solid #D7D7D7;">
+                                <div
+                                    style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.2); border: 2px solid #ccc;">
+                                    <img src="{{ asset('website/images/wc11.png') }}" alt="Photo"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <h3
+                                    style="font-size: 16px; font-weight: 600; color: #393186; margin-bottom: -4px;font-family: 'Poppins', sans-serif !important; text-transform: none !important;">
+                                    Hitesh Doshi
+                                </h3>
+                                <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
+                                    Designation 1
+                                </p>
+                                <a href="#" style="font-size: 16px;  color: #FFD800; text-decoration:underline;">Show
+                                    more</a>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 mt-4 ">
+
+                            <div class="card"
+                                style="width: 85%; margin: 0 auto; background: white; border-radius: 0px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding: 20px;border:1px solid #D7D7D7;">
+                                <div
+                                    style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.2); border: 2px solid #ccc;">
+                                    <img src="{{ asset('website/images/wc11.png') }}" alt="Photo"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <h3
+                                    style="font-size: 16px; font-weight: 600; color: #393186; margin-bottom: -4px;font-family: 'Poppins', sans-serif !important; text-transform: none !important;">
+                                    Hitesh Doshi
+                                </h3>
+                                <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
+                                    Designation 1
+                                </p>
+                                <a href="#"
+                                    style="font-size: 16px;  color: #FFD800; text-decoration:underline;">Show
+                                    more</a>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 mt-4 ">
+
+                            <div class="card"
+                                style="width: 85%; margin: 0 auto; background: white; border-radius: 0px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding: 20px;border:1px solid #D7D7D7;">
+                                <div
+                                    style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.2); border: 2px solid #ccc;">
+                                    <img src="{{ asset('website/images/wc11.png') }}" alt="Photo"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <h3
+                                    style="font-size: 16px; font-weight: 600; color: #393186; margin-bottom: -4px;font-family: 'Poppins', sans-serif !important; text-transform: none !important;">
+                                    Hitesh Doshi
+                                </h3>
+                                <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
+                                    Designation 1
+                                </p>
+                                <a href="#"
+                                    style="font-size: 16px;  color: #FFD800; text-decoration:underline;">Show
+                                    more</a>
+                            </div>
+
+                        </div>
+
+
+
+
+
                     </div>
 
                 </div>
 
-                <div class="col-lg-5 col-md-5 col-12">
-                    <div class="row gap-5">
-                        <div class="col-12">
-                            <!-- Image -->
-                            <div class="about-img-container" style="position: relative; flex: 1 1 45%; max-width: 500px;">
-                                <div
-                                    style="background-color: #FFD800; width: 80%;     border-radius: 0px 0px 0px 20px; height: 100%; position: absolute; top: -20px; right: 15px; z-index: 1;">
-                                </div>
-                                <!--<img src="{{ asset('website/images/ie8-panel/WhatsApp Image 2025-04-04 at 15.13.07_23e8a8d5 (1).png') }}"-->
-                                <!--    alt="About Us Image"-->
-                                <!--    style="width: 80%; border-radius: 10px; position: relative; z-index: 2; display: block; margin: auto; transform: translateX(10px);">-->
 
-                                <img src="{{ asset('website/images/about01.png') }}" alt="About Us Image"
-                                    style="width: 80%;     border-radius: 0px 0px 0px 20px; position: relative; z-index: 2; display: block; margin: auto; transform: translateX(10px);">
-
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <!-- Image -->
-                            <div class="about-img-container" style="position: relative; flex: 1 1 45%; max-width: 500px;">
-                                <div
-                                    style="background-color: #393186; width: 80%;     border-radius: 0px 0px 0px 20px; height: 100%; position: absolute; top: -20px; right: 15px; z-index: 1;">
-                                </div>
-                                <!--<img src="{{ asset('website/images/ie8-panel/WhatsApp Image 2025-04-04 at 15.13.07_23e8a8d5 (1).png') }}"-->
-                                <!--    alt="About Us Image"-->
-                                <!--    style="width: 80%; border-radius: 10px; position: relative; z-index: 2; display: block; margin: auto; transform: translateX(10px);">-->
-
-                                <img src="{{ asset('website/images/about01.png') }}" alt="About Us Image"
-                                    style="width: 80%;     border-radius: 0px 0px 0px 20px; position: relative; z-index: 2; display: block; margin: auto; transform: translateX(10px);">
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
             </div>
 
         </div>

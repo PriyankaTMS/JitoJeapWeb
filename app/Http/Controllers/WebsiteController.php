@@ -25,20 +25,42 @@ class WebsiteController extends Controller
         $images = Image::get();
         return view('website.home', compact('images', 'chapters'));
     }
-    public function aboutJito(){
+    public function aboutJito()
+    {
         return view('website.aboutJito');
     }
-    public function aboutJeap(){
+    public function aboutJeap()
+    {
         return view('website.aboutJeap');
     }
-    public function boardOfDirectors(){
+    public function boardOfDirectors()
+    {
         return view('website.boardOfDirectors');
     }
-    public function testimonialSuccessStories(){
+    public function zoneChairmen()
+    {
+        return view('website.zoneChairmen');
+    }
+    public function testimonialSuccessStories()
+    {
         return view('website.testimonialSuccessStories');
     }
 
-    public function beDonor(){
+    public function documents()
+    {
+        return view('website.documents');
+    }
+    public function howtoapply()
+    {
+        return view('website.howtoapply');
+    }
+    public function faqs()
+    {
+        return view('website.faqs');
+    }
+
+    public function beDonor()
+    {
         return view('website.beDonor');
     }
 
