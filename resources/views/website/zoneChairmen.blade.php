@@ -9,8 +9,7 @@
                 <div style="display: flex; align-items: center; flex-direction: row; gap: 15px;">
                     <div style="width: 3px; height: 40px; background-color: #E31E25;"></div>
                     <h2 style="font-size: 36px; font-weight: bold; font-family: 'Times New Roman', Times, serif; margin: 0;">
-                        <span style="color: #FFD800;">BOARD</span> <span style="color: #393186;">OF
-                            DIRECTORS</span>
+                        <span style="color: #FFD800;">Zone</span> <span style="color: #393186;">Chairmen</span>
                     </h2>
                 </div>
                 <div class="col-md-12 mt-4">
@@ -20,6 +19,10 @@
 
                             <div class="card"
                                 style="width: 85%; margin: 0 auto; background: white; border-radius: 0px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding: 20px;border:1px solid #D7D7D7;">
+                                <p
+                                    style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin:0px 0px 7px;font-family: 'Poppins';">
+                                    East Zone
+                                </p>
                                 <div
                                     style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.2); border: 2px solid #ccc;">
                                     <img src="{{ asset('website/images/wc11.png') }}" alt="Photo"
@@ -29,9 +32,35 @@
                                     style="font-size: 16px; font-weight: 600; color: #393186; margin-bottom: -4px;font-family: 'Poppins', sans-serif !important; text-transform: none !important;">
                                     Hitesh Doshi
                                 </h3>
-                                <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
+                                {{-- <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
                                     Designation 1
+                                </p> --}}
+                                <a href="#" style="font-size: 16px;  color: #FFD800; text-decoration:underline;">Show
+                                    more</a>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-3 mt-4 ">
+
+                            <div class="card"
+                                style="width: 85%; margin: 0 auto; background: white; border-radius: 0px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding: 20px;border:1px solid #D7D7D7;">
+                                <p
+                                    style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin:0px 0px 7px;font-family: 'Poppins';">
+                                    East Zone
                                 </p>
+                                <div
+                                    style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.2); border: 2px solid #ccc;">
+                                    <img src="{{ asset('website/images/wc11.png') }}" alt="Photo"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <h3
+                                    style="font-size: 16px; font-weight: 600; color: #393186; margin-bottom: -4px;font-family: 'Poppins', sans-serif !important; text-transform: none !important;">
+                                    Hitesh Doshi
+                                </h3>
+                                {{-- <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
+                                    Designation 1
+                                </p> --}}
                                 <a href="#" style="font-size: 16px;  color: #FFD800; text-decoration:underline;">Show
                                     more</a>
                             </div>
@@ -41,6 +70,10 @@
 
                             <div class="card"
                                 style="width: 85%; margin: 0 auto; background: white; border-radius: 0px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding: 20px;border:1px solid #D7D7D7;">
+                                <p
+                                    style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin:0px 0px 7px;font-family: 'Poppins';">
+                                    East Zone
+                                </p>
                                 <div
                                     style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.2); border: 2px solid #ccc;">
                                     <img src="{{ asset('website/images/wc11.png') }}" alt="Photo"
@@ -50,9 +83,9 @@
                                     style="font-size: 16px; font-weight: 600; color: #393186; margin-bottom: -4px;font-family: 'Poppins', sans-serif !important; text-transform: none !important;">
                                     Hitesh Doshi
                                 </h3>
-                                <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
+                                {{-- <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
                                     Designation 1
-                                </p>
+                                </p> --}}
                                 <a href="#" style="font-size: 16px;  color: #FFD800; text-decoration:underline;">Show
                                     more</a>
                             </div>
@@ -62,6 +95,10 @@
 
                             <div class="card"
                                 style="width: 85%; margin: 0 auto; background: white; border-radius: 0px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding: 20px;border:1px solid #D7D7D7;">
+                                <p
+                                    style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin:0px 0px 7px;font-family: 'Poppins';">
+                                    East Zone
+                                </p>
                                 <div
                                     style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.2); border: 2px solid #ccc;">
                                     <img src="{{ asset('website/images/wc11.png') }}" alt="Photo"
@@ -71,9 +108,9 @@
                                     style="font-size: 16px; font-weight: 600; color: #393186; margin-bottom: -4px;font-family: 'Poppins', sans-serif !important; text-transform: none !important;">
                                     Hitesh Doshi
                                 </h3>
-                                <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
+                                {{-- <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
                                     Designation 1
-                                </p>
+                                </p> --}}
                                 <a href="#" style="font-size: 16px;  color: #FFD800; text-decoration:underline;">Show
                                     more</a>
                             </div>
@@ -83,6 +120,10 @@
 
                             <div class="card"
                                 style="width: 85%; margin: 0 auto; background: white; border-radius: 0px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding: 20px;border:1px solid #D7D7D7;">
+                                <p
+                                    style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin:0px 0px 7px;font-family: 'Poppins';">
+                                    East Zone
+                                </p>
                                 <div
                                     style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.2); border: 2px solid #ccc;">
                                     <img src="{{ asset('website/images/wc11.png') }}" alt="Photo"
@@ -92,9 +133,9 @@
                                     style="font-size: 16px; font-weight: 600; color: #393186; margin-bottom: -4px;font-family: 'Poppins', sans-serif !important; text-transform: none !important;">
                                     Hitesh Doshi
                                 </h3>
-                                <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
+                                {{-- <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
                                     Designation 1
-                                </p>
+                                </p> --}}
                                 <a href="#" style="font-size: 16px;  color: #FFD800; text-decoration:underline;">Show
                                     more</a>
                             </div>
@@ -104,6 +145,10 @@
 
                             <div class="card"
                                 style="width: 85%; margin: 0 auto; background: white; border-radius: 0px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding: 20px;border:1px solid #D7D7D7;">
+                                <p
+                                    style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin:0px 0px 7px;font-family: 'Poppins';">
+                                    East Zone
+                                </p>
                                 <div
                                     style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.2); border: 2px solid #ccc;">
                                     <img src="{{ asset('website/images/wc11.png') }}" alt="Photo"
@@ -113,9 +158,9 @@
                                     style="font-size: 16px; font-weight: 600; color: #393186; margin-bottom: -4px;font-family: 'Poppins', sans-serif !important; text-transform: none !important;">
                                     Hitesh Doshi
                                 </h3>
-                                <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
+                                {{-- <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
                                     Designation 1
-                                </p>
+                                </p> --}}
                                 <a href="#" style="font-size: 16px;  color: #FFD800; text-decoration:underline;">Show
                                     more</a>
                             </div>
@@ -125,6 +170,10 @@
 
                             <div class="card"
                                 style="width: 85%; margin: 0 auto; background: white; border-radius: 0px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding: 20px;border:1px solid #D7D7D7;">
+                                <p
+                                    style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin:0px 0px 7px;font-family: 'Poppins';">
+                                    East Zone
+                                </p>
                                 <div
                                     style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.2); border: 2px solid #ccc;">
                                     <img src="{{ asset('website/images/wc11.png') }}" alt="Photo"
@@ -134,9 +183,9 @@
                                     style="font-size: 16px; font-weight: 600; color: #393186; margin-bottom: -4px;font-family: 'Poppins', sans-serif !important; text-transform: none !important;">
                                     Hitesh Doshi
                                 </h3>
-                                <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
+                                {{-- <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
                                     Designation 1
-                                </p>
+                                </p> --}}
                                 <a href="#" style="font-size: 16px;  color: #FFD800; text-decoration:underline;">Show
                                     more</a>
                             </div>
@@ -146,6 +195,10 @@
 
                             <div class="card"
                                 style="width: 85%; margin: 0 auto; background: white; border-radius: 0px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding: 20px;border:1px solid #D7D7D7;">
+                                <p
+                                    style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin:0px 0px 7px;font-family: 'Poppins';">
+                                    East Zone
+                                </p>
                                 <div
                                     style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.2); border: 2px solid #ccc;">
                                     <img src="{{ asset('website/images/wc11.png') }}" alt="Photo"
@@ -155,9 +208,9 @@
                                     style="font-size: 16px; font-weight: 600; color: #393186; margin-bottom: -4px;font-family: 'Poppins', sans-serif !important; text-transform: none !important;">
                                     Hitesh Doshi
                                 </h3>
-                                <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
+                                {{-- <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
                                     Designation 1
-                                </p>
+                                </p> --}}
                                 <a href="#" style="font-size: 16px;  color: #FFD800; text-decoration:underline;">Show
                                     more</a>
                             </div>
@@ -167,6 +220,10 @@
 
                             <div class="card"
                                 style="width: 85%; margin: 0 auto; background: white; border-radius: 0px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding: 20px;border:1px solid #D7D7D7;">
+                                <p
+                                    style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin:0px 0px 7px;font-family: 'Poppins';">
+                                    East Zone
+                                </p>
                                 <div
                                     style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.2); border: 2px solid #ccc;">
                                     <img src="{{ asset('website/images/wc11.png') }}" alt="Photo"
@@ -176,30 +233,9 @@
                                     style="font-size: 16px; font-weight: 600; color: #393186; margin-bottom: -4px;font-family: 'Poppins', sans-serif !important; text-transform: none !important;">
                                     Hitesh Doshi
                                 </h3>
-                                <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
+                                {{-- <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
                                     Designation 1
-                                </p>
-                                <a href="#" style="font-size: 16px;  color: #FFD800; text-decoration:underline;">Show
-                                    more</a>
-                            </div>
-
-                        </div>
-                        <div class="col-md-3 mt-4 ">
-
-                            <div class="card"
-                                style="width: 85%; margin: 0 auto; background: white; border-radius: 0px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding: 20px;border:1px solid #D7D7D7;">
-                                <div
-                                    style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.2); border: 2px solid #ccc;">
-                                    <img src="{{ asset('website/images/wc11.png') }}" alt="Photo"
-                                        style="width: 100%; height: 100%; object-fit: cover;">
-                                </div>
-                                <h3
-                                    style="font-size: 16px; font-weight: 600; color: #393186; margin-bottom: -4px;font-family: 'Poppins', sans-serif !important; text-transform: none !important;">
-                                    Hitesh Doshi
-                                </h3>
-                                <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
-                                    Designation 1
-                                </p>
+                                </p> --}}
                                 <a href="#"
                                     style="font-size: 16px;  color: #FFD800; text-decoration:underline;">Show
                                     more</a>
@@ -210,6 +246,10 @@
 
                             <div class="card"
                                 style="width: 85%; margin: 0 auto; background: white; border-radius: 0px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding: 20px;border:1px solid #D7D7D7;">
+                                <p
+                                    style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin:0px 0px 7px;font-family: 'Poppins';">
+                                    East Zone
+                                </p>
                                 <div
                                     style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto 15px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.2); border: 2px solid #ccc;">
                                     <img src="{{ asset('website/images/wc11.png') }}" alt="Photo"
@@ -219,9 +259,9 @@
                                     style="font-size: 16px; font-weight: 600; color: #393186; margin-bottom: -4px;font-family: 'Poppins', sans-serif !important; text-transform: none !important;">
                                     Hitesh Doshi
                                 </h3>
-                                <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
+                                {{-- <p style="font-size: 16px; color: #4D4D4D;font-weight: 600; margin-bottom: -4px;">
                                     Designation 1
-                                </p>
+                                </p> --}}
                                 <a href="#"
                                     style="font-size: 16px;  color: #FFD800; text-decoration:underline;">Show
                                     more</a>

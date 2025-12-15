@@ -36,13 +36,19 @@ Route::get('/', function () {
     return redirect()->route('index');
 });
 
-Route::prefix('about')->group(function(){
+Route::prefix('about')->group(function () {
     Route::get('/JITO', [WebsiteController::class, 'aboutJito'])->name('jito');
     Route::get('/JEAP', [WebsiteController::class, 'aboutJeap'])->name('jeap');
     Route::get('/Board-Of-Directors', [WebsiteController::class, 'boardOfDirectors'])->name('boardOfDirectors');
+    Route::get('/Zone-Chairmen', [WebsiteController::class, 'zoneChairmen'])->name('zoneChairmen');
     Route::get('/testimonials-and-Success-Stories', [WebsiteController::class, 'testimonialSuccessStories'])->name('testimonial&Success');
 });
-Route::prefix('donors')->group(function(){
+Route::prefix('application')->group(function () {
+    Route::get('/DOCUMENTS', [WebsiteController::class, 'documents'])->name('documents');
+    Route::get('/How-to-apply', [WebsiteController::class, 'howtoapply'])->name('howtoapply');
+    Route::get('/FAQ’s', [WebsiteController::class, 'faqs'])->name('faqs');
+});
+Route::prefix('donors')->group(function () {
     Route::get('/be-a-donor', [WebsiteController::class, 'beDonor'])->name('beDonor');
 });
 

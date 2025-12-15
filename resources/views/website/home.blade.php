@@ -191,15 +191,15 @@
                 /* Dotted connectors */
                 .dotted-connector {
                     /* display: none;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                position: absolute;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                top: 40px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                left: calc(100% + 20px);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                width: 40px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                height: 1px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                background-image: radial-gradient(circle, white 2px, transparent 2px);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                background-size: 4px 1px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                background-position: 0 0;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                transform: translateY(-50%); */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    position: absolute;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    top: 40px;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    left: calc(100% + 20px);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    width: 40px;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    height: 1px;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-image: radial-gradient(circle, white 2px, transparent 2px);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-size: 4px 1px;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-position: 0 0;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    transform: translateY(-50%); */
                     position: absolute;
                     top: 40px;
                     left: 32%;
@@ -972,1058 +972,423 @@
 
 
 
-        <!--========================Section Our Team================================-->
+        <style>
+            #testimonialContainer {
+                display: flex;
+                transition: transform 0.5s ease;
+                /* overflow: hidden; */
+            }
 
-        <section class="custom-padding"
-            style="padding:100px 40px 40px 40px; font-family: Arial, sans-serif; background: #fff; overflow: hidden;">
-            <div class="container" style="display: flex; align-items: center; flex-direction: row; gap: 15px;">
-                <div style="width: 3px; height: 40px; background-color: #E31E25;"></div>
-                <h2 style="font-size: 36px; font-weight: bold; font-family: 'Times New Roman', Times, serif; margin: 0;">
-                    <span style="color: #FFD800;">Our</span> <span style="color: #393186;">Team</span>
-                </h2>
-            </div>
-            <div class="container" class="row">
-                <!-- Slider Wrapper -->
-                <div class="slider slider-width"
-                    style="margin: 30px auto 0 auto; position: relative; width: 1235px; overflow: hidden; text-align: center;">
-                    {{-- <div class="slider" style="margin: 30px auto 0 auto; position: relative; max-width: 100%; overflow: hidden; text-align: center;"> --}}
-                    <div class="slider-track" style="display: flex; transition: transform 0.8s ease; gap: 30px;">
-                        <!-- Each card is 220px + 30px right margin = 250px total width -->
-                        <!-- Showing 5 cards at once => 5 x 220px + 4 x 30px gap = 1150px container -->
+            .testimonial-item {
+                flex: 0 0 33.333%;
+                box-sizing: border-box;
+                transition: transform 0.5s ease;
+            }
+        </style>
 
-                        <!-- Card Start (Repeat this block for each team member) -->
-                        <div class="card"
-                            style="min-width: 220px; background: #fff; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding-bottom: 20px;">
-                            <img src="{{ asset('website/images/ie8-panel/team/team1.png') }}" alt="Saurav Parakh"
-                                style="width: 100%; height: 220px; border-top-left-radius: 15px; border-top-right-radius: 15px; object-fit: cover;">
-                            <div style="margin-top: -25px; margin-bottom: 10px;">
-                                <img src="{{ asset('Teams/ZONE CONVENOR.png') }}"
-                                    style="width: 50px; background: #f2f0ff; border-radius: 50%; padding: 10px;" />
-                            </div>
+        <style>
+            .video-carousel {
+                display: flex;
+                /* justify-content: center; */
+                cursor: grab;
+                transition: transform 0.5s ease;
+            }
 
+            .video-item {
+                flex-shrink: 0;
+                margin-right: 20px;
+                width: 280px;
+                height: 254px;
+            }
+        </style>
+        <section>
 
-                            <h3 style="font-size: 20px; font-weight: bold; color: #5B5B5B; margin-bottom: 5px;">ZONE
-                                CONVENOR
-                            </h3>
-                            <p style="font-size: 14px; color: #555;">Saurav Parakh</p>
-                        </div>
+            <div class="container mt-5 mb-5">
 
-                        <div class="card"
-                            style="min-width: 220px; background: #fff; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding-bottom: 20px;">
-                            <img src="{{ asset('website/images/ie8-panel/team/team2.png') }}" alt="Saurav Parakh"
-                                style="width: 100%; height: 220px; border-top-left-radius: 15px; border-top-right-radius: 15px; object-fit: cover;">
-                            <div style="margin-top: -25px; margin-bottom: 10px;">
-                                <img src="{{ asset('Teams/ZONE CONVENOR.png') }}"
-                                    style="width: 50px; background: #f2f0ff; border-radius: 50%; padding: 10px;" />
-
-                            </div>
-                            <h3 style="font-size: 20px; font-weight: bold; color: #5B5B5B; margin-bottom: 5px;">ZONE
-                                CO-CONVENOR</h3>
-                            <p style="font-size: 14px; color: #555;">Mihir Bamb</p>
-                        </div>
-
-                        <div class="card"
-                            style="min-width: 220px; background: #fff; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding-bottom: 20px;">
-                            <img src="{{ asset('website/images/ie8-panel/team/team3.png') }}" alt="Saurav Parakh"
-                                style="width: 100%; height: 220px; border-top-left-radius: 15px; border-top-right-radius: 15px; object-fit: cover;">
-                            <div style="margin-top: -25px; margin-bottom: 10px;">
-                                <img src="{{ asset('Teams/JBN CONVENOR.png') }}"
-                                    style="width: 50px; background: #f2f0ff; border-radius: 50%; padding: 10px;" />
-                            </div>
-                            <h3 style="font-size: 20px; font-weight: bold; color: #5B5B5B; margin-bottom: 5px;">JBN
-                                CONVENOR
-                            </h3>
-                            <p style="font-size: 14px; color: #555;">Sanket Chhoriya</p>
-                        </div>
-
-                        <div class="card"
-                            style="min-width: 220px; background: #fff; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding-bottom: 20px;">
-                            <img src="{{ asset('website/images/ie8-panel/team/team4.png') }}" alt="Saurav Parakh"
-                                style="width: 100%; height: 220px; border-top-left-radius: 15px; border-top-right-radius: 15px; object-fit: cover;">
-                            <div style="margin-top: -25px; margin-bottom: 10px;">
-                                <img src="{{ asset('Teams/CFE CONVENOR.png') }}"
-                                    style="width: 50px; background: #f2f0ff; border-radius: 50%; padding: 10px;" />
-                            </div>
-                            <h3 style="font-size: 20px; font-weight: bold; color: #5B5B5B; margin-bottom: 5px;">CFE
-                                CONVENOR
-                            </h3>
-                            <p style="font-size: 14px; color: #555;">Aarya Chordiya</p>
-                        </div>
-
-                        <div class="card"
-                            style="min-width: 220px; background: #fff; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding-bottom: 20px;">
-                            <img src="{{ asset('website/images/ie8-panel/team/team5.png') }}" alt="Saurav Parakh"
-                                style="width: 100%; height: 220px; border-top-left-radius: 15px; border-top-right-radius: 15px; object-fit: cover;">
-                            <div style="margin-top: -25px; margin-bottom: 10px;">
-                                <img src="{{ asset('Teams/JITEM CONVENOR.png') }}"
-                                    style="width: 50px; background: #f2f0ff; border-radius: 50%; padding: 10px;" />
-                            </div>
-                            <h3 style="font-size: 20px; font-weight: bold; color: #5B5B5B; margin-bottom: 5px;">JITEM
-                                CONVENOR
-                            </h3>
-                            <p style="font-size: 14px; color: #555;">Aashish Desai</p>
-                        </div>
-
-                        <div class="card"
-                            style="min-width: 220px; background: #fff; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding-bottom: 20px;">
-                            <img src="{{ asset('website/images/ie8-panel/team/team6.png') }}" alt="Saurav Parakh"
-                                style="width: 100%; height: 220px; border-top-left-radius: 15px; border-top-right-radius: 15px; object-fit: cover;">
-                            <div style="margin-top: -25px; margin-bottom: 10px;">
-                                <img src="{{ asset('Teams/IT CONVENOR.png') }}"
-                                    style="width: 50px; background: #f2f0ff; border-radius: 50%; padding: 10px;" />
-                            </div>
-                            <h3 style="font-size: 20px; font-weight: bold; color: #5B5B5B; margin-bottom: 5px;">IT CONVENOR
-                            </h3>
-                            <p style="font-size: 14px; color: #555;">Aayushi Dungarwal</p>
-                        </div>
-
-                        <div class="card"
-                            style="min-width: 220px; background: #fff; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding-bottom: 20px;">
-                            <img src="{{ asset('website/images/ie8-panel/team/team7.png') }}" alt="Saurav Parakh"
-                                style="width: 100%; height: 220px; border-top-left-radius: 15px; border-top-right-radius: 15px; object-fit: cover;">
-                            <div style="margin-top: -25px; margin-bottom: 10px;">
-                                <img src="{{ asset('Teams/JATF CONVENOR.png') }}"
-                                    style="width: 50px; background: #f2f0ff; border-radius: 50%; padding: 10px;" />
-                            </div>
-                            <h3 style="font-size: 20px; font-weight: bold; color: #5B5B5B; margin-bottom: 5px;">JATF
-                                CONVENOR
-                            </h3>
-                            <p style="font-size: 14px; color: #555;">Aakash Mutha</p>
-                        </div>
-
-                        <div class="card"
-                            style="min-width: 220px; background: #fff; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding-bottom: 20px;">
-                            <img src="{{ asset('website/images/ie8-panel/team/team8.png') }}" alt="Saurav Parakh"
-                                style="width: 100%; height: 220px; border-top-left-radius: 15px; border-top-right-radius: 15px; object-fit: cover;">
-                            <div style="margin-top: -25px; margin-bottom: 10px;">
-                                <img src="{{ asset('Teams/JIIF CONVENOR.png') }}"
-                                    style="width: 50px; background: #f2f0ff; border-radius: 50%; padding: 10px;" />
-                            </div>
-                            <h3 style="font-size: 20px; font-weight: bold; color: #5B5B5B; margin-bottom: 5px;">JIIF
-                                CONVENOR
-                            </h3>
-                            <p style="font-size: 14px; color: #555;"> CA. Aman Jain</p>
-                        </div>
-
-                        <div class="card"
-                            style="min-width: 220px; background: #fff; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding-bottom: 20px;">
-                            <img src="{{ asset('website/images/ie8-panel/team/team9.png') }}" alt="Saurav Parakh"
-                                style="width: 100%; height: 220px; border-top-left-radius: 15px; border-top-right-radius: 15px; object-fit: cover;">
-                            <div style="margin-top: -25px; margin-bottom: 10px;">
-                                <img src="{{ asset('Teams/JOBS CONVENOR.png') }}"
-                                    style="width: 50px; background: #f2f0ff; border-radius: 50%; padding: 10px;" />
-                            </div>
-                            <h3 style="font-size: 20px; font-weight: bold; color: #5B5B5B; margin-bottom: 5px;">JOBS
-                                CONVENOR
-                            </h3>
-                            <p style="font-size: 14px; color: #555;">Prajkat Mudholkar</p>
-                        </div>
-
-                        <div class="card"
-                            style="min-width: 220px; background: #fff; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding-bottom: 20px;">
-                            <img src="{{ asset('website/images/ie8-panel/team/team10.png') }}" alt="Saurav Parakh"
-                                style="width: 100%; height: 220px; border-top-left-radius: 15px; border-top-right-radius: 15px; object-fit: cover;">
-                            <div style="margin-top: -25px; margin-bottom: 10px;">
-                                <img src="{{ asset('Teams/JPF CONVENOR.png') }}"
-                                    style="width: 50px; background: #f2f0ff; border-radius: 50%; padding: 10px;" />
-                            </div>
-                            <h3 style="font-size: 20px; font-weight: bold; color: #5B5B5B; margin-bottom: 5px;">JPF
-                                CONVENOR
-                            </h3>
-                            <p style="font-size: 14px; color: #555;">Romil Sojatia</p>
-                        </div>
-
-                        <div class="card"
-                            style="min-width: 220px; background: #fff; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding-bottom: 20px;">
-                            <img src="{{ asset('website/images/ie8-panel/team/team11.png') }}" alt="Saurav Parakh"
-                                style="width: 100%; height: 220px; border-top-left-radius: 15px; border-top-right-radius: 15px; object-fit: cover;">
-                            <div style="margin-top: -25px; margin-bottom: 10px;">
-                                <img src="{{ asset('Teams/PR CONVENOR.png') }}"
-                                    style="width: 50px; background: #f2f0ff; border-radius: 50%; padding: 10px;" />
-                            </div>
-                            <h3 style="font-size: 20px; font-weight: bold; color: #5B5B5B; margin-bottom: 5px;">PR
-                                CONVENOR
-                            </h3>
-                            <p style="font-size: 14px; color: #555;">Khushboo Munot</p>
-                        </div>
-
-                        <div class="card"
-                            style="min-width: 220px; background: #fff; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding-bottom: 20px;">
-                            <img src="{{ asset('website/images/ie8-panel/team/team12.png') }}" alt="Saurav Parakh"
-                                style="width: 100%; height: 220px; border-top-left-radius: 15px; border-top-right-radius: 15px; object-fit: cover;">
-                            <div style="margin-top: -25px; margin-bottom: 10px;">
-                                <img src="{{ asset('Teams/MATRIMONY CONVENOR.png') }}"
-                                    style="width: 50px; background: #f2f0ff; border-radius: 50%; padding: 10px;" />
-                            </div>
-                            <h3 style="font-size: 20px; font-weight: bold; color: #5B5B5B; margin-bottom: 5px;">SEVA &
-                                MINORITY
-                                CONVENOR</h3>
-                            <p style="font-size: 14px; color: #555;">Shreyans Lalwani</p>
-                        </div>
-
-                        <div class="card"
-                            style="min-width: 220px; background: #fff; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding-bottom: 20px;">
-                            <img src="{{ asset('website/images/ie8-panel/team/team13.png') }}" alt="Saurav Parakh"
-                                style="width: 100%; height: 220px; border-top-left-radius: 15px; border-top-right-radius: 15px; object-fit: cover;">
-                            <div style="margin-top: -25px; margin-bottom: 10px;">
-                                <img src="{{ asset('Teams/SPORTS CONVENOR.png') }}"
-                                    style="width: 50px; background: #f2f0ff; border-radius: 50%; padding: 10px;" />
-                            </div>
-                            <h3 style="font-size: 20px; font-weight: bold; color: #5B5B5B; margin-bottom: 5px;">SPORTS
-                                CONVENOR
-                            </h3>
-                            <p style="font-size: 14px; color: #555;">Niraj Sethia</p>
-                        </div>
-
-                        <div class="card"
-                            style="min-width: 220px; background: #fff; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; padding-bottom: 20px;">
-                            <img src="{{ asset('website/images/ie8-panel/team/team14.png') }}" alt="Saurav Parakh"
-                                style="width: 100%; height: 220px; border-top-left-radius: 15px; border-top-right-radius: 15px; object-fit: cover;">
-                            <div style="margin-top: -25px; margin-bottom: 10px;">
-                                <img src="{{ asset('Teams/TALENT CONVENOR.png') }}"
-                                    style="width: 50px; background: #f2f0ff; border-radius: 50%; padding: 10px;" />
-                            </div>
-                            <h3 style="font-size: 20px; font-weight: bold; color: #5B5B5B; margin-bottom: 5px;">TALENT
-                                CONVENOR
-                            </h3>
-                            <p style="font-size: 14px; color: #555;">Snehal Gugale</p>
-                        </div>
-                        <!-- Repeat card blocks as needed... -->
+                <!-- Text -->
+                <div style="flex: 1 1 50%; max-width: 700px;">
+                    <div style="display: flex; align-items: center; flex-direction: row; gap: 15px;">
+                        <div style="width: 3px; height: 40px; background-color: #E31E25;"></div>
+                        <h2
+                            style="font-size: 36px; font-weight: bold; font-family: 'Times New Roman', Times, serif; margin: 0;">
+                            <span style="color: #FFD800;">Our</span> <span style="color: #393186;">Testimonials</span>
+                        </h2>
                     </div>
+
                 </div>
             </div>
         </section>
+        <section style="padding: 60px 0 60px 0px;background-color: #FFF9E6;max-width:100vw;">
+            <div class="container" style="display: flex; flex-direction: column; gap: 30px;    max-width: 90vw;">
 
+                <!-- About Us Section -->
+                <div class="text-image-wrapper align-items-center" style="overflow: hidden;background-color: #FFF9E6;">
+                    <div class="row">
+                        {{-- <div class="col-12 mt-3 mb-5">
+
+                            <!-- Text -->
+                            <div style="flex: 1 1 50%; max-width: 700px;">
+                                <div style="display: flex; align-items: center; flex-direction: row; gap: 15px;">
+                                    <div style="width: 3px; height: 40px; background-color: #E31E25;"></div>
+                                    <h2
+                                        style="font-size: 36px; font-weight: bold; font-family: 'Times New Roman', Times, serif; margin: 0;">
+                                        <span style="color: #FFD800;">Our</span> <span
+                                            style="color: #393186;">Testimonials</span>
+                                    </h2>
+                                </div>
+
+                            </div>
+                        </div> --}}
+                        <div class="col-12 my-5">
+                            <div class="row">
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-2 d-flex justify-content-center align-items-center"
+                                    style="background-color: #FFF9E6;z-index:10;">
+                                    <img src="{{ asset('website/images/leftPointedArrow.png') }}" alt=""
+                                        style="width: 45px;height:45px;cursor:pointer;z-index:10;" id="leftArrow">
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-sm-8 col-8" style="background-color: #FFF9E6;">
+                                    <div id="testimonialContainer" class="testimonial-slider">
+
+                                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                            <div class="testimonial-item d-flex justify-content-center align-items-center">
+                                                <div class="row position-relative"
+                                                    style="background-color:#FFFFFF;border:2px solid #DCDCDC; padding: 15px;width: 80%;">
+                                                    <div
+                                                        class="col-12 mb-2 d-flex align-items-center justify-content-center">
+                                                        <div class="testOwner position-absolute"
+                                                            style="height:115px;width:115px;border-radius:50%;background-color:#FFFFFF;border:2px solid #DCDCDC;    display: flex;align-items: center;justify-content: center;">
+                                                            <img src="{{ asset('website/images/speaker-01-270x303.jpg') }}"
+                                                                alt="" class=""
+                                                                style="height:105px;width:105px;border-radius:50%;">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="col-12 mb-2 mt-5 d-flex align-items-center justify-content-center">
+                                                        <p>“<span
+                                                                style="color:#393186;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">Life-Changing
+                                                                Support</span>”</p>
+                                                    </div>
+                                                    <div class="col-12 mb-2">
+                                                        <p>JEAP’s assistance helped me pursue my education without financial
+                                                            stress.</p>
+                                                    </div>
+                                                    <div class="col-12 mb-2">
+                                                        <p
+                                                            style="color:#5B5B5B;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">
+                                                            Sanyukta Shah </p>
+                                                    </div>
+                                                    <div class="col-12 mb-2">
+                                                        <p>24 Dec 2024</p>
+                                                    </div>
+                                                    <div class="col-12 mb-2 position-absolute" style="bottom: 15px;">
+                                                        <img src="{{ asset('website/images/endingQuotes.png') }}"
+                                                            alt=""
+                                                            style="width:48px;height:36px;position:absolute;right:43px">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                            <div class="testimonial-item d-flex justify-content-center align-items-center">
+                                                <div class="row position-relative"
+                                                    style="background-color:#FFFFFF;border:2px solid #DCDCDC; padding: 15px;width: 80%;">
+                                                    <div
+                                                        class="col-12 mb-2 d-flex align-items-center justify-content-center">
+                                                        <div class="testOwner position-absolute"
+                                                            style="height:115px;width:115px;border-radius:50%;background-color:#FFFFFF;border:2px solid #DCDCDC;    display: flex;align-items: center;justify-content: center;">
+                                                            <img src="{{ asset('website/images/speaker-01-270x303.jpg') }}"
+                                                                alt="" class=""
+                                                                style="height:105px;width:105px;border-radius:50%;">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="col-12 mb-2 mt-5 d-flex align-items-center justify-content-center">
+                                                        <p>“<span
+                                                                style="color:#393186;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">Life-Changing
+                                                                Support</span>”</p>
+                                                    </div>
+                                                    <div class="col-12 mb-2">
+                                                        <p>JEAP’s assistance helped me pursue my education without financial
+                                                            stress.</p>
+                                                    </div>
+                                                    <div class="col-12 mb-2">
+                                                        <p
+                                                            style="color:#5B5B5B;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">
+                                                            Sanyukta Shah </p>
+                                                    </div>
+                                                    <div class="col-12 mb-2">
+                                                        <p>24 Dec 2024</p>
+                                                    </div>
+                                                    <div class="col-12 mb-2 position-absolute" style="bottom: 15px;">
+                                                        <img src="{{ asset('website/images/endingQuotes.png') }}"
+                                                            alt=""
+                                                            style="width:48px;height:36px;position:absolute;right:43px">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                            <div class="testimonial-item d-flex justify-content-center align-items-center">
+                                                <div class="row position-relative"
+                                                    style="background-color:#FFFFFF;border:2px solid #DCDCDC; padding: 15px;width: 80%;">
+                                                    <div
+                                                        class="col-12 mb-2 d-flex align-items-center justify-content-center">
+                                                        <div class="testOwner position-absolute"
+                                                            style="height:115px;width:115px;border-radius:50%;background-color:#FFFFFF;border:2px solid #DCDCDC;    display: flex;align-items: center;justify-content: center;">
+                                                            <img src="{{ asset('website/images/speaker-01-270x303.jpg') }}"
+                                                                alt="" class=""
+                                                                style="height:105px;width:105px;border-radius:50%;">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="col-12 mb-2 mt-5 d-flex align-items-center justify-content-center">
+                                                        <p>“<span
+                                                                style="color:#393186;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">Life-Changing
+                                                                Support</span>”</p>
+                                                    </div>
+                                                    <div class="col-12 mb-2">
+                                                        <p>JEAP’s assistance helped me pursue my education without financial
+                                                            stress.</p>
+                                                    </div>
+                                                    <div class="col-12 mb-2">
+                                                        <p
+                                                            style="color:#5B5B5B;font-size:15px;font-weight:bold;font-family:Poppins;letter-spacing: 1px;">
+                                                            Sanyukta Shah </p>
+                                                    </div>
+                                                    <div class="col-12 mb-2">
+                                                        <p>24 Dec 2024</p>
+                                                    </div>
+                                                    <div class="col-12 mb-2 position-absolute" style="bottom: 15px;">
+                                                        <img src="{{ asset('website/images/endingQuotes.png') }}"
+                                                            alt=""
+                                                            style="width:48px;height:36px;position:absolute;right:43px">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-2 d-flex justify-content-center align-items-center"
+                                    style="background-color: #FFF9E6;z-index:10;">
+                                    <img src="{{ asset('website/images/rightPointedArrow.png') }}" alt=""
+                                        style="width: 45px;height:45px;cursor:pointer;z-index:10;" id="rightArrow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <section style="padding: 80px 0; background: #FFF;">
+            <div class="container" style="max-width: 1400px;">
+                <div class="text-image-wrapper align-items-center" style="overflow: hidden;">
+                    <div class="row">
+                        <div class="col-12 mb-5">
+                            <div style="display: flex; align-items: center; flex-direction: row; gap: 15px;">
+                                <div style="width: 3px; height: 40px; background-color: #E31E25;"></div>
+                                <h2
+                                    style="font-size: 36px; font-weight: bold; font-family: 'Times New Roman', Times, serif; margin: 0;">
+                                    <span style="color: #FFD800;">SUCCESS</span> <span
+                                        style="color: #393186;">STORIES</span>
+                                </h2>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div id="videoCarousel" class="video-carousel">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center">
+                                <div class="video-item">
+                                    <div class="p-3" style="width:280px;height:195px;border:1px solid #ccc;">
+                                        <div class="col-12"
+                                            style="display:flex;align-items:center;justify-content:center;">
+                                            <iframe loading="lazy"
+                                                title="JIN Reflexology Feedback - Perfect Diagnosis at Jodhpur"
+                                                width="240" height="157"
+                                                src="https://www.youtube.com/embed/fA8uEVODBVA?feature=oembed"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen>
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center">
+                                <div class="video-item">
+                                    <div class="p-3" style="width:280px;height:195px;border:1px solid #ccc;">
+                                        <div class="col-12"
+                                            style="display:flex;align-items:center;justify-content:center;">
+                                            <iframe loading="lazy"
+                                                title="JIN Reflexology Feedback - Perfect Diagnosis at Jodhpur"
+                                                width="240" height="157"
+                                                src="https://www.youtube.com/embed/fA8uEVODBVA?feature=oembed"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen>
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center">
+                                <div class="video-item">
+                                    <div class="p-3" style="width:280px;height:195px;border:1px solid #ccc;">
+                                        <div class="col-12"
+                                            style="display:flex;align-items:center;justify-content:center;">
+                                            <iframe loading="lazy"
+                                                title="JIN Reflexology Feedback - Perfect Diagnosis at Jodhpur"
+                                                width="240" height="157"
+                                                src="https://www.youtube.com/embed/fA8uEVODBVA?feature=oembed"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen>
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center">
+                                <div class="video-item">
+                                    <div class="p-3" style="width:280px;height:195px;border:1px solid #ccc;">
+                                        <div class="col-12"
+                                            style="display:flex;align-items:center;justify-content:center;">
+                                            <iframe loading="lazy"
+                                                title="JIN Reflexology Feedback - Perfect Diagnosis at Jodhpur"
+                                                width="240" height="157"
+                                                src="https://www.youtube.com/embed/fA8uEVODBVA?feature=oembed"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen>
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
 
         <script>
-            const track = document.querySelector('.slider-track');
-            const cards = document.querySelectorAll('.slider-track .card');
-            const cardWidth = cards[0].offsetWidth + 30;
-            const cardsPerView = window.innerWidth <= 600 ? 1 : window.innerWidth <= 1024 ? 2 : 5;
+            document.addEventListener('DOMContentLoaded', function() {
+                const container = document.getElementById('testimonialContainer');
+                const items = container.querySelectorAll('.testimonial-item');
+                const totalItems = items.length; // 7
+                const visibleItems = 3;
+                const maxIndex = totalItems - visibleItems; // 4
+                let currentIndex = 0;
 
-            let index = 0;
+                document.getElementById('rightArrow').addEventListener('click', function() {
+                    currentIndex++;
+                    if (currentIndex >= maxIndex) {
+                        setTimeout(function() {
+                            container.style.transition = 'none';
+                            currentIndex = 0;
+                            updateTransform();
+                            setTimeout(function() {
+                                container.style.transition = 'transform 0.5s ease';
+                            }, 50);
+                        }, 250);
+                    } else {
+                        updateTransform();
+                    }
+                });
 
-            // Clone first N cards and append to the end
-            for (let i = 0; i < cardsPerView; i++) {
-                const clone = cards[i].cloneNode(true);
-                track.appendChild(clone);
-            }
+                document.getElementById('leftArrow').addEventListener('click', function() {
+                    currentIndex--;
+                    if (currentIndex < 0) {
+                        setTimeout(function() {
+                            container.style.transition = 'none';
+                            currentIndex = maxIndex - 1;
+                            updateTransform();
+                            setTimeout(function() {
+                                container.style.transition = 'transform 0.5s ease';
+                            }, 50);
+                        }, 250 casc);
+                    } else {
+                        updateTransform();
+                    }
+                });
 
-            function slide() {
-                index++;
-                track.style.transition = "transform 0.5s ease-in-out";
-                track.style.transform = `translateX(-${index * cardWidth}px)`;
-
-                // Reset when reaching the cloned end
-                if (index === cards.length) {
-                    setTimeout(() => {
-                        track.style.transition = "none";
-                        track.style.transform = `translateX(0px)`;
-                        index = 0;
-                    }, 500); // match the transition duration
+                function updateTransform() {
+                    const transformValue = -(currentIndex * (100 / visibleItems)) + '%';
+                    container.style.transform = 'translateX(' + transformValue + ')';
+                    // Scale the middle testimonial
+                    items.forEach((item, i) => {
+                        if (i === currentIndex + 1) {
+                            item.style.transform = 'scale(1.1)';
+                        } else {
+                            item.style.transform = 'scale(1)';
+                        }
+                    });
                 }
-            }
+            });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const container = document.getElementById('testimonialContainer');
+                const items = container.querySelectorAll('.testimonial-item');
+                const totalItems = items.length;
+                const visibleItems = 3;
+                let currentIndex = 0;
 
-            setInterval(slide, 4000);
+                document.getElementById('rightArrow').addEventListener('click', function() {
+                    currentIndex = (currentIndex + 1) % (totalItems - visibleItems + 1);
+                    updateTransform();
+                });
+
+                document.getElementById('leftArrow').addEventListener('click', function() {
+                    currentIndex = (currentIndex - 1 + (totalItems - visibleItems + 1)) % (totalItems -
+                        visibleItems + 1);
+                    updateTransform();
+                });
+
+                function updateTransform() {
+                    const transformValue = -(currentIndex * (100 / visibleItems)) + '%';
+                    container.style.transform = 'translateX(' + transformValue + ')';
+                }
+            });
         </script>
 
-
-
-
-
-
-
-
-
-
-        <style>
-            @media (max-width: 768px) {
-                section.custom-padding {
-                    padding: 77px !important;
-                }
-            }
-
-            .slider-width {
-                width: 1235px;
-                margin: 30px auto 0 auto;
-                position: relative;
-                overflow: hidden;
-                text-align: center;
-            }
-
-            @media (max-width: 768px) {
-                .slider {
-                    width: 250px !important;
-                }
-            }
-        </style>
-
-
-
-
-
-
-
-
-
-
-
-        <!--========================Section Conference Schedule=============================-->
-        {{-- <section class="section section-lg bg-default text-center">
-        <div class="container">
-            <h6>Event Schedule plan</h6>
-            <h3>Conference Schedule.</h3>
-            <div class="tabs-custom tabs-horizontal tabs-corporate" id="tabs-1">
-                <!--Nav tabs-->
-                <ul class="nav nav-tabs">
-                    <li class="nav-item" role="presentation"><a class="nav-link nav-link nav-link-secondary-darker"
-                            href="#tabs-1-1" data-toggle="tab" data-triangle=".nav-link-overlay"><span
-                                class="nav-link-overlay"></span>
-
-                            <span class="nav-link-title">Morning</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link nav-link-purple-heart" href="#tabs-1-2"
-                            data-toggle="tab" data-triangle=".nav-link-overlay"><span class="nav-link-overlay"></span>
-
-                            <span class="nav-link-title">Afternoon</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link nav-link-primary" href="#tabs-1-3"
-                            data-toggle="tab" data-triangle=".nav-link-overlay"><span class="nav-link-overlay"></span>
-
-                            <span class="nav-link-title">Evening</span></a></li>
-                </ul>
-                <!--Tab panes-->
-
-                <div class="tab-content wow fadeIn">
-                    <div class="tab-pane fade" id="tabs-1-1">
-                        <div class="card-group-custom card-group-corporate" id="accordion1" role="tablist"
-                            aria-multiselectable="false">
-                            <!--Bootstrap card-1-->
-                            <article class="card card-custom card-corporate">
-                                <div class="card-header" role="tab">
-                                    <div class="card-title"><a class="collapsed" id="accordion1-card-head-hxapwahb"
-                                            data-toggle="collapse" data-parent="#accordion1"
-                                            href="#accordion1-card-body-onwkttkd"
-                                            aria-controls="accordion1-card-body-onwkttkd" aria-expanded="false"
-                                            role="button"><span class="schedule-classic"><span
-                                                    class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                        class="unit-left"><span class="schedule-classic-img"><img
-                                                                src="{{ asset('website/images/event1.png') }}"
-                                                                alt="" width="122"
-                                                                height="122" /></span></span><span
-                                                        class="unit-body"><span class="schedule-classic-content">
-
-                                                            <span
-                                                                class="schedule-classic-title heading-4">Registration</span>
-                                                        </span></span></span></span></a></div>
-                                </div>
-                            </article>
-                            <!--Bootstrap card-2-->
-                            <article class="card card-custom card-corporate">
-                                <div class="card-header" role="tab">
-                                    <div class="card-title"><a class="collapsed" id="accordion1-card-head-hijijucp"
-                                            data-toggle="collapse" data-parent="#accordion1"
-                                            href="#accordion1-card-body-lffuwxio"
-                                            aria-controls="accordion1-card-body-lffuwxio" aria-expanded="false"
-                                            role="button"><span class="schedule-classic"><span
-                                                    class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                        class="unit-left"><span class="schedule-classic-img"><img
-                                                                src="{{ asset('website/images/event2.png') }}"
-                                                                alt="" width="122"
-                                                                height="122" /></span></span><span
-                                                        class="unit-body"><span class="schedule-classic-content">
-
-                                                            <span class="schedule-classic-title heading-4">Opening
-                                                                Ceremony</span>
-                                                        </span></span></span></span></a></div>
-                                </div>
-                            </article>
-                            <!--Bootstrap card-3-->
-                            <article class="card card-custom card-corporate">
-                                <div class="card-header" role="tab">
-                                    <div class="card-title"><a class="collapsed" id="accordion1-card-head-hpaxeker"
-                                            data-toggle="collapse" data-parent="#accordion1"
-                                            href="#accordion1-card-body-qdqkcamp"
-                                            aria-controls="accordion1-card-body-qdqkcamp" aria-expanded="false"
-                                            role="button"><span class="schedule-classic"><span
-                                                    class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                        class="unit-left"><span class="schedule-classic-img"><img
-                                                                src="{{ asset('website/images/event3.png') }}"
-                                                                alt="" width="122"
-                                                                height="122" /></span></span><span
-                                                        class="unit-body"><span class="schedule-classic-content">
-
-                                                            <span class="schedule-classic-title heading-4">Welcome
-                                                                Speech</span>
-                                                        </span></span></span></span></a></div>
-                                </div>
-                            </article>
-                            <!-- Schedule Simple-4-->
-                            <article class="card card-custom card-corporate">
-                                <div class="card-header" role="tab">
-                                    <div class="card-title"><a class="collapsed" id="accordion1-card-head-hxapwahb"
-                                            data-toggle="collapse" data-parent="#accordion1"
-                                            href="#accordion1-card-body-onwkttkd"
-                                            aria-controls="accordion1-card-body-onwkttkd" aria-expanded="false"
-                                            role="button"><span class="schedule-classic"><span
-                                                    class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                        class="unit-left"><span class="schedule-classic-img"><img
-                                                                src="{{ asset('website/images/event4.png') }}"
-                                                                alt="" width="122"
-                                                                height="122" /></span></span><span
-                                                        class="unit-body"><span class="schedule-classic-content">
-
-                                                            <span class="schedule-classic-title heading-4">Member Awards
-                                                                1</span>
-                                                        </span></span></span></span></a></div>
-                                </div>
-                            </article>
-                            <!--Bootstrap card-5-->
-                            <article class="card card-custom card-corporate">
-                                <div class="card-header" role="tab">
-                                    <div class="card-title"><a class="collapsed" id="accordion1-card-head-hxapwahb"
-                                            data-toggle="collapse" data-parent="#accordion1"
-                                            href="#accordion1-card-body-onwkttkd"
-                                            aria-controls="accordion1-card-body-onwkttkd" aria-expanded="false"
-                                            role="button"><span class="schedule-classic"><span
-                                                    class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                        class="unit-left"><span class="schedule-classic-img"><img
-                                                                src="{{ asset('website/images/event5.png') }}"
-                                                                alt="" width="122"
-                                                                height="122" /></span></span><span
-                                                        class="unit-body"><span class="schedule-classic-content">
-
-                                                            <span class="schedule-classic-title heading-4">1-2-1
-                                                                Conclave</span>
-                                                        </span></span></span></span></a></div>
-                                </div>
-                            </article>
-                            <!--Bootstrap card-6-->
-                            <article class="card card-custom card-corporate">
-                                <div class="card-header" role="tab">
-                                    <div class="card-title"><a class="collapsed" id="accordion1-card-head-hxapwahb"
-                                            data-toggle="collapse" data-parent="#accordion1"
-                                            href="#accordion1-card-body-onwkttkd"
-                                            aria-controls="accordion1-card-body-onwkttkd" aria-expanded="false"
-                                            role="button"><span class="schedule-classic"><span
-                                                    class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                        class="unit-left"><span class="schedule-classic-img"><img
-                                                                src="{{ asset('website/images/event6.png') }}"
-                                                                alt="" width="122"
-                                                                height="122" /></span></span><span
-                                                        class="unit-body"><span class="schedule-classic-content">
-
-                                                            <span class="schedule-classic-title heading-4">30
-                                                                seconds competition</span>
-                                                        </span></span></span></span></a></div>
-                                </div>
-                            </article>
-                            <!--Bootstrap card-5-->
-
-
-                        </div>
-                    </div>
-
-                    <div class="tab-pane fade" id="tabs-1-2">
-                        <div class="card-group-custom card-group-corporate" id="accordion2" role="tablist"
-                            aria-multiselectable="false">
-                            <!--Bootstrap card-7-->
-                            <article class="card card-custom card-corporate">
-                                <div class="card-header" role="tab">
-                                    <div class="card-title"><a class="collapsed" id="accordion1-card-head-hxapwahb"
-                                            data-toggle="collapse" data-parent="#accordion1"
-                                            href="#accordion1-card-body-onwkttkd"
-                                            aria-controls="accordion1-card-body-onwkttkd" aria-expanded="false"
-                                            role="button"><span class="schedule-classic"><span
-                                                    class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                        class="unit-left"><span class="schedule-classic-img"><img
-                                                                src="{{ asset('website/images/event7.png') }}"
-                                                                alt="" width="122"
-                                                                height="122" /></span></span><span
-                                                        class="unit-body"><span class="schedule-classic-content">
-
-                                                            <span class="schedule-classic-title heading-4">Member Awards
-                                                                2</span>
-                                                        </span></span></span></span></a></div>
-                                </div>
-                            </article>
-                            <!--Bootstrap card-8-->
-                            <article class="card card-custom card-corporate">
-                                <div class="card-header" role="tab">
-                                    <div class="card-title"><a class="collapsed" id="accordion1-card-head-hxapwahb"
-                                            data-toggle="collapse" data-parent="#accordion1"
-                                            href="#accordion1-card-body-onwkttkd"
-                                            aria-controls="accordion1-card-body-onwkttkd" aria-expanded="false"
-                                            role="button"><span class="schedule-classic"><span
-                                                    class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                        class="unit-left"><span class="schedule-classic-img"><img
-                                                                src="{{ asset('website/images/event8.png') }}"
-                                                                alt="" width="122"
-                                                                height="122" /></span></span><span
-                                                        class="unit-body"><span class="schedule-classic-content">
-
-                                                            <span class="schedule-classic-title heading-4">Member Awards
-                                                                3</span>
-                                                        </span></span></span></span></a></div>
-                                </div>
-                            </article>
-                            <!--Bootstrap card9-->
-                            <article class="card card-custom card-corporate">
-                                <div class="card-header" role="tab">
-                                    <div class="card-title"><a class="collapsed" id="accordion2-card-head-spnrcijv"
-                                            data-toggle="collapse" data-parent="#accordion2"
-                                            href="#accordion2-card-body-shdhqwhj"
-                                            aria-controls="accordion2-card-body-shdhqwhj" aria-expanded="false"
-                                            role="button"><span class="schedule-classic"><span
-                                                    class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                        class="unit-left"><span class="schedule-classic-img"><img
-                                                                src="{{ asset('website/images/event9.png') }}"
-                                                                alt="" width="122"
-                                                                height="122" /></span></span><span
-                                                        class="unit-body"><span class="schedule-classic-content">
-
-                                                            <span class="schedule-classic-title heading-4">Regional Team
-                                                                Awards 1</span>
-                                                        </span></span></span></span></a></div>
-                                </div>
-                            </article>
-                            <!--Bootstrap card10-->
-                            <article class="card card-custom card-corporate">
-                                <div class="card-header" role="tab">
-                                    <div class="card-title"><a class="collapsed" id="accordion2-card-head-vrmbocua"
-                                            data-toggle="collapse" data-parent="#accordion2"
-                                            href="#accordion2-card-body-eqwqapab"
-                                            aria-controls="accordion2-card-body-eqwqapab" aria-expanded="false"
-                                            role="button"><span class="schedule-classic"><span
-                                                    class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                        class="unit-left"><span class="schedule-classic-img"><img
-                                                                src="{{ asset('website/images/event10.png') }}"
-                                                                alt="" width="122"
-                                                                height="122" /></span></span><span
-                                                        class="unit-body"><span class="schedule-classic-content">
-
-                                                            <span class="schedule-classic-title heading-4">Regional Team
-                                                                Awards 2</span>
-                                                        </span></span></span></span></a></div>
-                                </div>
-                            </article>
-                            <!--Bootstrap card11-->
-                            <article class="card card-custom card-corporate">
-                                <div class="card-header" role="tab">
-                                    <div class="card-title"><a class="collapsed" id="accordion2-card-head-vrmbocua"
-                                            data-toggle="collapse" data-parent="#accordion2"
-                                            href="#accordion2-card-body-eqwqapab"
-                                            aria-controls="accordion2-card-body-eqwqapab" aria-expanded="false"
-                                            role="button"><span class="schedule-classic"><span
-                                                    class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                        class="unit-left"><span class="schedule-classic-img"><img
-                                                                src="{{ asset('website/images/event11.png') }}"
-                                                                alt="" width="122"
-                                                                height="122" /></span></span><span
-                                                        class="unit-body"><span class="schedule-classic-content">
-
-                                                            <span class="schedule-classic-title heading-4">Turbo Cup Member
-                                                                Awards</span>
-                                                        </span></span></span></span></a></div>
-                                </div>
-                            </article>
-                            <!--Bootstrap card12-->
-                            <article class="card card-custom card-corporate">
-                                <div class="card-header" role="tab">
-                                    <div class="card-title"><a class="collapsed" id="accordion2-card-head-vrmbocua"
-                                            data-toggle="collapse" data-parent="#accordion2"
-                                            href="#accordion2-card-body-eqwqapab"
-                                            aria-controls="accordion2-card-body-eqwqapab" aria-expanded="false"
-                                            role="button"><span class="schedule-classic"><span
-                                                    class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                        class="unit-left"><span class="schedule-classic-img"><img
-                                                                src="{{ asset('website/images/event12.png') }}"
-                                                                alt="" width="122"
-                                                                height="122" /></span></span><span
-                                                        class="unit-body"><span class="schedule-classic-content">
-
-                                                            <span class="schedule-classic-title heading-4">LT
-                                                                Awards</span>
-                                                        </span></span></span></span></a></div>
-                                </div>
-                            </article>
-                            <!--Bootstrap card1-->
-
-                        </div>
-                    </div>
-
-                    <div class="tab-pane fade" id="tabs-1-3">
-                        <div class="card-group-custom card-group-corporate" id="accordion3" role="tablist"
-                            aria-multiselectable="false">
-                            <!--Bootstrap card13-->
-                            <article class="card card-custom card-corporate">
-                                <div class="card-header" role="tab">
-                                    <div class="card-title"><a class="collapsed" id="accordion2-card-head-vrmbocua"
-                                            data-toggle="collapse" data-parent="#accordion2"
-                                            href="#accordion2-card-body-eqwqapab"
-                                            aria-controls="accordion2-card-body-eqwqapab" aria-expanded="false"
-                                            role="button"><span class="schedule-classic"><span
-                                                    class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                        class="unit-left"><span class="schedule-classic-img"><img
-                                                                src="{{ asset('website/images/event13.png') }}"
-                                                                alt="" width="122"
-                                                                height="122" /></span></span><span
-                                                        class="unit-body"><span class="schedule-classic-content">
-
-                                                            <span class="schedule-classic-title heading-4">Digital
-                                                                Conference 2019
-                                                                Chapter Go Green Awards</span>
-                                                        </span></span></span></span></a></div>
-                                </div>
-                            </article>
-                            <!--Bootstrap card14-->
-                            <article class="card card-custom card-corporate">
-                                <div class="card-header" role="tab">
-                                    <div class="card-title"><a class="collapsed" id="accordion3-card-head-spqeafxt"
-                                            data-toggle="collapse" data-parent="#accordion3"
-                                            href="#accordion3-card-body-nxplbtnu"
-                                            aria-controls="accordion3-card-body-nxplbtnu" aria-expanded="false"
-                                            role="button"><span class="schedule-classic"><span
-                                                    class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                        class="unit-left"><span class="schedule-classic-img"><img
-                                                                src="{{ asset('website/images/event14.png') }}"
-                                                                alt="" width="122"
-                                                                height="122" /></span></span><span
-                                                        class="unit-body"><span class="schedule-classic-content">
-
-                                                            <span class="schedule-classic-title heading-4">Chapter Awards
-                                                            </span>
-                                                        </span></span></span></span></a></div>
-                                </div>
-                            </article>
-                            <!--Bootstrap card15-->
-                            <article class="card card-custom card-corporate">
-                                <div class="card-header" role="tab">
-                                    <div class="card-title"><a class="collapsed" id="accordion3-card-head-twpndpre"
-                                            data-toggle="collapse" data-parent="#accordion3"
-                                            href="#accordion3-card-body-isrhhksp"
-                                            aria-controls="accordion3-card-body-isrhhksp" aria-expanded="false"
-                                            role="button"><span class="schedule-classic"><span
-                                                    class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                        class="unit-left"><span class="schedule-classic-img"><img
-                                                                src="{{ asset('website/images/event15.png') }}"
-                                                                alt="" width="122"
-                                                                height="122" /></span></span><span
-                                                        class="unit-body"><span class="schedule-classic-content">
-
-                                                            <span class="schedule-classic-title heading-4">Chapter
-                                                                Awards</span>
-                                                        </span></span></span></span></a></div>
-                                </div>
-                            </article>
-                            <!--Bootstrap card16-->
-                            <article class="card card-custom card-corporate">
-                                <div class="card-header" role="tab">
-                                    <div class="card-title"><a class="collapsed" id="accordion3-card-head-twpndpre"
-                                            data-toggle="collapse" data-parent="#accordion3"
-                                            href="#accordion3-card-body-isrhhksp"
-                                            aria-controls="accordion3-card-body-isrhhksp" aria-expanded="false"
-                                            role="button"><span class="schedule-classic"><span
-                                                    class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                        class="unit-left"><span class="schedule-classic-img"><img
-                                                                src="{{ asset('website/images/event16.png') }}"
-                                                                alt="" width="122"
-                                                                height="122" /></span></span><span
-                                                        class="unit-body"><span class="schedule-classic-content">
-
-                                                            <span class="schedule-classic-title heading-4">Chapter
-                                                                Awards</span>
-                                                        </span></span></span></span></a></div>
-                                </div>
-                            </article>
-                            <!--Bootstrap card17-->
-                            <article class="card card-custom card-corporate">
-                                <div class="card-header" role="tab">
-                                    <div class="card-title"><a class="collapsed" id="accordion3-card-head-twpndpre"
-                                            data-toggle="collapse" data-parent="#accordion3"
-                                            href="#accordion3-card-body-isrhhksp"
-                                            aria-controls="accordion3-card-body-isrhhksp" aria-expanded="false"
-                                            role="button"><span class="schedule-classic"><span
-                                                    class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                        class="unit-left"><span class="schedule-classic-img"><img
-                                                                src="{{ asset('website/images/event17.png') }}"
-                                                                alt="" width="122"
-                                                                height="122" /></span></span><span
-                                                        class="unit-body"><span class="schedule-classic-content">
-
-                                                            <span class="schedule-classic-title heading-4">Chapter Awards
-                                                                stages</span>
-                                                        </span></span></span></span></a></div>
-                                </div>
-                            </article>
-                            <!--Bootstrap card18-->
-                            <article class="card card-custom card-corporate">
-                                <div class="card-header" role="tab">
-                                    <div class="card-title"><a class="collapsed" id="accordion3-card-head-twpndpre"
-                                            data-toggle="collapse" data-parent="#accordion3"
-                                            href="#accordion3-card-body-isrhhksp"
-                                            aria-controls="accordion3-card-body-isrhhksp" aria-expanded="false"
-                                            role="button"><span class="schedule-classic"><span
-                                                    class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                        class="unit-left"><span class="schedule-classic-img"><img
-                                                                src="{{ asset('website/images/event18.png') }}"
-                                                                alt="" width="122"
-                                                                height="122" /></span></span><span
-                                                        class="unit-body"><span class="schedule-classic-content">
-
-                                                            <span class="schedule-classic-title heading-4">Chapter
-                                                                Awards</span>
-                                                        </span></span></span></span></a></div>
-                                </div>
-
-                            </article>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-
-
-
-
-
-
-
-
-        {{-- <section class="parallax-container section" >
-        <div class="parallax-content section-lg context-dark text-center parallax-overlay-gradient-primary-1">
-            <div class="container container-wide">
-                <h6>event album</h6>
-                <h3>Photo Gallery</h3>
-                <div class="row row-ten row-narrow row-30 row-lg-50 justify-content-center" data-lightgallery="group">
-                    <div class="col-sm-4 col-md-3 col-lg-2">
-                        <div class="wow">
-                            <div>
-                                <!-- Gallery Thumbnail--><a class="thumbnail"
-                                    href="{{ asset('website/images/gallery_img_1.png') }}"
-                                    data-lightgallery="item"><span></span><span></span><img
-                                        src="{{ asset('website/images/gallery_img_1.png') }}" alt=""
-                                        width="298" height="343" /></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-lg-2">
-                        <div class="wow">
-                            <div>
-                                <!-- Gallery Thumbnail--><a class="thumbnail"
-                                    href="{{ asset('website/images/gallery_img_2.png') }}"
-                                    data-lightgallery="item"><span></span><span></span><img
-                                        src="{{ asset('website/images/gallery_img_2.png') }}" alt=""
-                                        width="298" height="343" /></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-lg-2">
-                        <div class="wow">
-                            <div>
-                                <!-- Gallery Thumbnail--><a class="thumbnail"
-                                    href="{{ asset('website/images/gallery_img_3.png') }}"
-                                    data-lightgallery="item"><span></span><span></span><img
-                                        src="{{ asset('website/images/gallery_img_3.png') }}" alt=""
-                                        width="298" height="343" /></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-lg-2">
-                        <div class="wow">
-                            <div>
-                                <!-- Gallery Thumbnail--><a class="thumbnail"
-                                    href="{{ asset('website/images/gallery_img_4.png') }}"
-                                    data-lightgallery="item"><span></span><span></span><img
-                                        src="{{ asset('website/images/gallery_img_4.png') }}" alt=""
-                                        width="298" height="343" /></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-lg-2">
-                        <div class="wow">
-                            <div>
-                                <!-- Gallery Thumbnail--><a class="thumbnail"
-                                    href="{{ asset('website/images/gallery_img_5.png') }}"
-                                    data-lightgallery="item"><span></span><span></span><img
-                                        src="{{ asset('website/images/gallery_img_5.png') }}" alt=""
-                                        width="298" height="343" /></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </section> --}}
-        <!--========================Section Official Sponsors=================================-->
-        {{-- <section class="parallax-container section"
-        data-parallax-img="{{ asset('website/images/bg-parallax-04-1894x1170.jpg') }}">
-        <div class="parallax-content section-lg context-dark text-center">
-            <div class="container">
-
-                <h3>Official Sponsors</h3>
-                <div class="row row-30 row-lg-50 justify-content-center">
-                    <div class="col-sm-4 col-lg-4">
-                        <div class="wow">
-                            <div>
-                                <!-- Sponsor Heading -->
-                                <h5 class="sponsor-heading" style="margin-bottom: 15px;">TITLE SPONSOR</h5>
-                                <!-- Sponsor--><a class="sponsor" href="#" data-triangle=".sponsor-overlay">
-                                    <div class="sponsor-overlay"></div>
-                                    <div class="sponsor-img"><img src="{{ asset('website/images/Rishiraj_02.png') }}"
-                                            alt="" width="210" height="70" />
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-lg-4">
-                        <div class="wow">
-                            <div>
-                                <!-- Sponsor Heading -->
-                                <h5 class="sponsor-heading" style="margin-bottom: 15px;">CO SPONSORED BY</h5>
-                                <!-- Sponsor-->
-                                <a class="sponsor" href="#" data-triangle=".sponsor-overlay">
-
-                                    <div class="sponsor-img">
-                                        <img src="{{ asset('website/images/impressive_impressions.png') }}"
-                                            alt="" width="210" height="70" />
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-lg-4">
-                        <div class="wow">
-                            <div>
-                                <!-- Sponsor Heading -->
-                                <h5 class="sponsor-heading" style="margin-bottom: 15px;">BADGE SPONSORED</h5>
-                                <!-- Sponsor--><a class="sponsor" href="#" data-triangle=".sponsor-overlay">
-                                    <div class="sponsor-overlay"></div>
-                                    <div class="sponsor-img"><img src="{{ asset('website/images/real_buildcon.png') }}"
-                                            alt="" width="210" height="70" />
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        </section> --}}
-        <!--=========================Section Grid Gallery=====================================-->
-        {{-- <section class="section section-lg bg-default text-center">
-        <div class="container container-wide">
-            <h4 class="font-weight-bold">Event Partners</h4>
-            <div class="row row-ten row-narrow row-30 row-lg-50 justify-content-center" data-lightgallery="group">
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <!-- Gallery Thumbnail--><img src="{{ asset('website/images/logo4.png') }}" alt=""
-                        width="298" height="343" />
-                </div>
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <!-- Gallery Thumbnail--><img src="{{ asset('website/images/logo3.png') }}" alt=""
-                        width="298" height="343" />
-                </div>
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <!-- Gallery Thumbnail--><img src="{{ asset('website/images/logo5.png') }}" alt=""
-                        width="298" height="343" />
-                </div>
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <!-- Gallery Thumbnail--><img src="{{ asset('website/images/logo1.png') }}" alt=""
-                        width="298" height="343" />
-                </div>
-
-            </div>
-        </div>
-     </section> --}}
-        <!--=======================Section We Have Top Executive And Start Up Here=========-->
-
-
-        {{-- <section class="section section-lg bg-default text-center">
-        <div class="container container-wide">
-            <h4 class="font-weight-bold" style="margin-bottom:60px;margin-top:-12px">Event Supported BY</h4>
-            <div class="brand-area pb-120">
-                <div class="brand-slider">
-                    <div class="brand-gallery">
-                        <!-- Add your images here -->
-                        <div class="brand-item">
-                            <a href="#"><img src="{{ asset('website/images/L1.png') }}" alt="Gallery 1"
-                                    class="brand-image"></a>
-                        </div>
-                        <div class="brand-item">
-                            <a href="#"><img src="{{ asset('website/images/L2.png') }}" alt="Gallery 2"
-                                    class="brand-image"></a>
-                        </div>
-                        <div class="brand-item">
-                            <a href="#"><img src="{{ asset('website/images/L3.png') }}" alt="Gallery 3"
-                                    class="brand-image"></a>
-                        </div>
-                        <div class="brand-item">
-                            <a href="#"><img src="{{ asset('website/images/L4.png') }}" alt="Gallery 4"
-                                    class="brand-image"></a>
-                        </div>
-                        <div class="brand-item">
-                            <a href="#"><img src="{{ asset('website/images/L5.png') }}" alt="Gallery 5"
-                                    class="brand-image"></a>
-                        </div>
-                        <div class="brand-item">
-                            <a href="#"><img src="{{ asset('website/images/L6.png') }}" alt="Gallery 6"
-                                    class="brand-image"></a>
-                        </div>
-                        <div class="brand-item">
-                            <a href="#"><img src="{{ asset('website/images/L7.png') }}" alt="Gallery 7"
-                                    class="brand-image"></a>
-                        </div>
-                        <div class="brand-item">
-                            <a href="#"><img src="{{ asset('website/images/L8.png') }}" alt="Gallery 8"
-                                    class="brand-image"></a>
-                        </div>
-                        <div class="brand-item">
-                            <a href="#"><img src="{{ asset('website/images/L9.png') }}" alt="Gallery 9"
-                                    class="brand-image"></a>
-                        </div>
-                        <div class="brand-item">
-                            <a href="#"><img src="{{ asset('website/images/L10.png') }}" alt="Gallery 10"
-                                    class="brand-image"></a>
-                        </div>
-                        <div class="brand-item">
-                            <a href="#"><img src="{{ asset('website/images/L11.png') }}" alt="Gallery 11"
-                                    class="brand-image"></a>
-                        </div>
-                        <div class="brand-item">
-                            <a href="#"><img src="{{ asset('website/images/L12.png') }}" alt="Gallery 12"
-                                    class="brand-image"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </section> --}}
-
-
-        <!--=======================Section We Have Top Executive And Start Up Here=========-->
-        {{-- <section class="parallax-container section"
-        data-parallax-img="{{ asset('website/images/bg-parallax-05-1894x758.jpg') }}">
-        <div class="parallax-content section-lg context-dark text-center">
-            <div class="container">
-                <div class="row row-30 justify-content-center">
-                    <div class="col-md-10 col-lg-8"><a class="video-link wow fadeScale"
-                            href="https://youtu.be/G6N4CVXy1dk?si=vSgKsRE8WvvV4BRd" data-lightgallery="item">
-                            <div class="video-link-bg" data-triangle=".video-link-overlay"><span
-                                    class="video-link-overlay"></span>
-                            </div><span class="icon fa-play"></span>
-                        </a>
-                        <h6 class="text-secondary wow" data-splitting>click here to Watch our promo</h6>
-                        <h2 class="wow" data-splitting>We Have Top Executive And Start Up Here.</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </section> --}}
-
-
-        {{-- <section class="bg-gray-800 h-[282px] flex items-center justify-between px-10 text-white">
-        <div class="text-2xl font-semibold">
-          | POWERED BY
-        </div>
-        <div>
-          <img src="" alt="TMS Logo" class="h-[242px]" />
-        </div>
-        <div class="text-sm leading-tight text-right">
-          <p><span class="font-bold">Website link:</span> <a href="http://www.techmetsolutions.com" class="underline text-blue-400">http://www.techmetsolutions.com</a></p>
-          <p class="mt-2 font-bold">Follow us for updates on our work, projects, <br />and impact.</p>
-          <div class="mt-2">
-            <img src="/path-to-instagram-icon.png" alt="Instagram" class="h-6 inline-block" />
-          </div>
-        </div>
-      </section> --}}
-
-        <style>
-            body {
-                margin: 0;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            }
-
-            .powered-by {
-                background-color: #414042;
-                color: white;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                padding: 40px 20px;
-                column-gap: 40px;
-                text-align: center;
-            }
-
-            .powered-by .label {
-                font-weight: bold;
-                font-size: 1.5rem;
-                border-left: 2px solid white;
-                padding-left: 10px;
-            }
-
-            .powered-by .logo img {
-                max-width: 150px;
-                border-radius: 15px;
-            }
-
-            .powered-by .info {
-                max-width: 355px;
-            }
-
-
-
-
-            .powered-by .info p {
-                margin: 5px 0;
-            }
-
-            .powered-by .info a {
-                color: #ddd;
-                text-decoration: none;
-            }
-
-            .powered-by .info a:hover {
-                color: #fff;
-                text-decoration: underline;
-            }
-
-            .powered-by .social-icon {
-                font-size: 1.8rem;
-                margin-top: 10px;
-            }
-        </style>
-
-
-        <div class="powered-by" style="margin:50px 0;padding:30px 0;">
-
-            <div class="label">
-                <p style="font-family: 'Times New Roman'; font-size:36px">POWERED BY</p>
-            </div>
-            <div class="logo text-center mt-4 mb-4" style="background-color: white; border-radius: 15px;margin:0 40px; ">
-                <a href="http://techmetsolutions.com/#/" target="_blank"
-                    style="text-decoration: none; color: black;"><img
-                        src="{{ asset('website/images/ie8-panel/TMS-LOGO[1] 2 (1).png') }}"
-                        alt="TechMET IT Solutions Logo" style="max-width: 270px !important; margin:30px 30px;" /></a>
-            </div>
-            <div class="info">
-                <p><strong>Website link:</strong> <a href="http://www.techmetsolutions.com"
-                        target="_blank">http://www.techmetsolutions.com</a></p>
-                <p style="font-family: Arial;font-size:16px"><strong>Follow us for updates on our work, projects,<br> and
-                        impact.</strong> </p>
-                <div class="social-icon">
-                    <a href="https://www.instagram.com/techmet.solutions_?igsh=c291MjkzdWVpbWZ2&utm_source=qr"
-                        target="blank" style="text-decoration: none; color: black;">
-                        <svg width="43" height="43" viewBox="0 0 43 43" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M23.3416 3.5835C25.3572 3.58887 26.3802 3.59962 27.2635 3.6247L27.6111 3.63725C28.0124 3.65158 28.4084 3.6695 28.8868 3.691C30.7931 3.78058 32.0938 4.08158 33.2351 4.52412C34.4176 4.9792 35.4138 5.59554 36.41 6.58991C37.3214 7.48527 38.0264 8.56876 38.4758 9.76475C38.9183 10.906 39.2193 12.2068 39.3089 14.1149C39.3304 14.5915 39.3483 14.9875 39.3626 15.3906L39.3734 15.7382C39.4003 16.6197 39.411 17.6427 39.4146 19.6583L39.4164 20.9949V23.342C39.4207 24.6488 39.407 25.9557 39.3752 27.2622L39.3644 27.6097C39.3501 28.0129 39.3322 28.4088 39.3107 28.8854C39.2211 30.7935 38.9165 32.0925 38.4758 33.2356C38.0264 34.4316 37.3214 35.5151 36.41 36.4104C35.5146 37.3218 34.4311 38.0268 33.2351 38.4762C32.0938 38.9187 30.7931 39.2197 28.8868 39.3093L27.6111 39.3631L27.2635 39.3738C26.3802 39.3989 25.3572 39.4115 23.3416 39.415L22.005 39.4168H19.6597C18.3522 39.4214 17.0448 39.4077 15.7377 39.3756L15.3901 39.3649C14.9648 39.3488 14.5396 39.3302 14.1145 39.3093C12.2081 39.2197 10.9074 38.9187 9.7643 38.4762C8.56895 38.0266 7.48609 37.3216 6.59126 36.4104C5.6792 35.5152 4.97358 34.4317 4.52368 33.2356C4.08113 32.0943 3.78013 30.7935 3.69055 28.8854L3.6368 27.6097L3.62784 27.2622C3.59481 25.9557 3.57988 24.6489 3.58305 23.342V19.6583C3.57809 18.3515 3.59123 17.0446 3.62247 15.7382L3.63501 15.3906C3.64934 14.9875 3.66726 14.5915 3.68876 14.1149C3.77834 12.2068 4.07934 10.9078 4.52188 9.76475C4.97284 8.56827 5.6797 7.48474 6.59305 6.58991C7.48737 5.67894 8.5696 4.97396 9.7643 4.52412C10.9074 4.08158 12.2063 3.78058 14.1145 3.691C14.5911 3.6695 14.9888 3.65158 15.3901 3.63725L15.7377 3.6265C17.0442 3.59466 18.351 3.58093 19.6579 3.58529L23.3416 3.5835ZM21.4997 12.5418C19.1238 12.5418 16.8452 13.4857 15.1652 15.1657C13.4852 16.8457 12.5414 19.1243 12.5414 21.5002C12.5414 23.8761 13.4852 26.1546 15.1652 27.8347C16.8452 29.5147 19.1238 30.4585 21.4997 30.4585C23.8756 30.4585 26.1542 29.5147 27.8342 27.8347C29.5142 26.1546 30.4581 23.8761 30.4581 21.5002C30.4581 19.1243 29.5142 16.8457 27.8342 15.1657C26.1542 13.4857 23.8756 12.5418 21.4997 12.5418ZM21.4997 16.1252C22.2056 16.125 22.9045 16.264 23.5567 16.534C24.2089 16.804 24.8015 17.1998 25.3007 17.6988C25.7999 18.1979 26.1959 18.7903 26.4661 19.4424C26.7364 20.0945 26.8755 20.7934 26.8756 21.4993C26.8757 22.2051 26.7368 22.9041 26.4668 23.5563C26.1968 24.2084 25.801 24.801 25.3019 25.3002C24.8029 25.7994 24.2104 26.1954 23.5584 26.4657C22.9063 26.7359 22.2074 26.875 21.5015 26.8752C20.076 26.8752 18.7088 26.3089 17.7008 25.3009C16.6928 24.2929 16.1265 22.9257 16.1265 21.5002C16.1265 20.0746 16.6928 18.7075 17.7008 17.6995C18.7088 16.6915 20.076 16.1252 21.5015 16.1252M30.9078 9.85433C30.3138 9.85433 29.7441 10.0903 29.3241 10.5103C28.9041 10.9303 28.6682 11.4999 28.6682 12.0939C28.6682 12.6879 28.9041 13.2575 29.3241 13.6775C29.7441 14.0975 30.3138 14.3335 30.9078 14.3335C31.5017 14.3335 32.0714 14.0975 32.4914 13.6775C32.9114 13.2575 33.1473 12.6879 33.1473 12.0939C33.1473 11.4999 32.9114 10.9303 32.4914 10.5103C32.0714 10.0903 31.5017 9.85433 30.9078 9.85433Z"
-                                fill="white" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const carousel = document.getElementById('videoCarousel');
+                let isDown = false;
+                let startX;
+                let transformAmount = 0;
+
+                carousel.addEventListener('mousedown', (e) => {
+                    isDown = true;
+                    startX = e.clientX - transformAmount;
+                    carousel.style.cursor = 'grabbing';
+                });
+
+                carousel.addEventListener('mouseleave', () => {
+                    isDown = false;
+                    carousel.style.cursor = 'grab';
+                });
+
+                carousel.addEventListener('mouseup', () => {
+                    isDown = false;
+                    carousel.style.cursor = 'grab';
+                });
+
+                carousel.addEventListener('mousemove', (e) => {
+                    if (!isDown) return;
+                    e.preventDefault();
+                    const x = e.clientX;
+                    transformAmount = x - startX;
+                    // Limit drag: min - (totalWidth - visible) * .3 or something, but for simplicity, free
+                    carousel.style.transform = `translateX(${transformAmount}px)`;
+                });
+            });
+        </script>
     @endsection

@@ -54,6 +54,93 @@
         .body {
             font-family: 'Poppins', sans-serif !important;
         }
+
+        #Dropdown {
+            list-style: none;
+            padding: 10px 0;
+            margin: 0;
+            background: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            position: absolute;
+            top: 23px;
+            left: 0;
+            min-width: 200px;
+            display: none;
+            z-index: 999;
+            text-align: left;
+        }
+
+        #Dropdown li {
+            padding: 8px 15px;
+        }
+
+        #Dropdown li a {
+            color: #515050 !important;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif !important;
+            font-weight: 500;
+            font-size: 16px;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        #Dropdown li.active a {
+            color: #009846 !important;
+            font-weight: 600;
+        }
+
+        #Dropdown li:hover a {
+            color: #009846;
+            background-color: #f8f9fa;
+        }
+
+        #appdropdown {
+            list-style: none;
+            padding: 10px 0;
+            margin: 0;
+            background: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            position: absolute;
+            top: 23px;
+            left: 0;
+            min-width: 200px;
+            display: none;
+            z-index: 999;
+            text-align: left;
+        }
+
+        #appdropdown li {
+            padding: 8px 15px;
+        }
+
+        #appdropdown li a {
+            color: #515050 !important;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif !important;
+            font-weight: 500;
+            font-size: 16px;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        #appdropdown li.active a {
+            color: #009846 !important;
+            font-weight: 600;
+        }
+
+        #appdropdown li:hover a {
+            color: #009846;
+            background-color: #f8f9fa;
+        }
+
+        .navbar-nav .nav-item.active #appdropdownToggle span {
+            color: #009846 !important;
+            font-weight: 600;
+        }
     </style>
     <!-- Bootstrap JS and Popper.js (Bootstrap 4) -->
 
@@ -239,37 +326,99 @@
                                                         </svg>
                                                     </div>
 
+
                                                     <ul id="Dropdown"
                                                         style="
-            list-style:none;
-            padding:10px;
-            margin:0;
-            background:white;
-            border:1px solid #ccc;
-            position:absolute;
-            top:23px;
-            left:0;
-            min-width:150px;
-            display:none;
-            z-index:999;
-        ">
-                                                        <li class="{{ request()->is('about/JITO') ? 'active' : '' }}">
+                                                                list-style: none;
+                                                                padding: 10px 0;
+                                                                margin: 0;
+                                                                background: #ffffff;
+                                                                border: 1px solid #ccc;
+                                                                border-radius: 8px;
+                                                                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                                                                position: absolute;
+                                                                top: 23px;
+                                                                left: 0;
+                                                                min-width: 200px;
+                                                                display: none;
+                                                                z-index: 999;
+                                                                text-align: left;
+                                                            ">
+
+                                                        <li class="{{ request()->routeIs('jito') ? 'active' : '' }}">
                                                             <a href="{{ route('jito') }}">Jito</a>
                                                         </li>
-                                                        <li class="{{ request()->is('about/JEAP') ? 'active' : '' }}">
+
+                                                        <li class="{{ request()->routeIs('jeap') ? 'active' : '' }}">
                                                             <a href="{{ route('jeap') }}">Jeap</a>
                                                         </li>
+
                                                         <li
-                                                            class="{{ request()->is('about/Board-Of-Directors') ? 'active' : '' }}">
+                                                            class="{{ request()->routeIs('boardOfDirectors') ? 'active' : '' }}">
                                                             <a href="{{ route('boardOfDirectors') }}">Board of
                                                                 Directors</a>
                                                         </li>
+
                                                         <li
-                                                            class="{{ request()->is('about/testimonials-and-Success-Stories') ? 'active' : '' }}">
-                                                            <a href="{{ route('testimonial&Success') }}">Our
-                                                                testimonials / Success story </a>
+                                                            class="{{ request()->routeIs('zoneChairmen') ? 'active' : '' }}">
+                                                            <a href="{{ route('zoneChairmen') }}">Zone Chairmen</a>
                                                         </li>
+
+                                                        <li
+                                                            class="{{ request()->routeIs('testimonial&Success') ? 'active' : '' }}">
+                                                            <a href="{{ route('testimonial&Success') }}">Our
+                                                                Testimonials / Success Story</a>
+                                                        </li>
+
                                                     </ul>
+
+                                                </li>
+                                                <li class="d-none d-md-inline text-black px-2">|</li>
+                                                <li class="nav-item px-md-2 py-1 position-relative">
+                                                    <div id="appdropdownToggle"
+                                                        class="d-flex text-black align-items-center"
+                                                        style="cursor: pointer;">
+                                                        <span>APPLICATION</span>
+                                                        <svg width="14" height="14" style="margin-left: 5px;">
+                                                            <path d="M2 4 L7 9 L12 4" stroke="black" stroke-width="2"
+                                                                fill="none" />
+                                                        </svg>
+                                                    </div>
+
+
+                                                    <ul id="appdropdown"
+                                                        style="
+                                                                list-style: none;
+                                                                padding: 10px 0;
+                                                                margin: 0;
+                                                                background: #ffffff;
+                                                                border: 1px solid #ccc;
+                                                                border-radius: 8px;
+                                                                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                                                                position: absolute;
+                                                                top: 23px;
+                                                                left: 0;
+                                                                min-width: 200px;
+                                                                display: none;
+                                                                z-index: 999;
+                                                                text-align: left;
+                                                            ">
+
+                                                        <li class="">
+                                                            <a href="">DOCUMENTS</a>
+                                                        </li>
+                                                        <li
+                                                            class="{{ request()->routeIs('howtoapply') ? 'active' : '' }}">
+                                                            <a href="{{ route('howtoapply') }}">How to apply</a>
+                                                        </li>
+                                                        <li class="">
+                                                            <a href="">FAQ’s</a>
+                                                        </li>
+
+
+
+                                                    </ul>
+
                                                 </li>
                                                 <li class="d-none d-md-inline text-black px-2">|</li>
                                                 <li class="nav-item px-md-2 py-1 position-relative">
@@ -285,20 +434,20 @@
 
                                                     <ul id="donorDropdown"
                                                         style="
-            list-style:none;
-            padding:10px;
-            margin:0;
-            background:white;
-            border:1px solid #ccc;
-            position:absolute;
-            top:23px;
-            left:0;
-            min-width:150px;
-            display:none;
-            z-index:999;
-        ">
+                                                                list-style:none;
+                                                                padding:10px;
+                                                                margin:0;
+                                                                background:white;
+                                                                border:1px solid #ccc;
+                                                                position:absolute;
+                                                                top:23px;
+                                                                left:0;
+                                                                min-width:150px;
+                                                                display:none;
+                                                                z-index:999;
+                                                            ">
                                                         <li class="">
-                                                            <a href="{{route('beDonor')}}">BE A DONOR</a>
+                                                            <a href="{{ route('beDonor') }}">BE A DONOR</a>
                                                         </li>
                                                         <li class="">
                                                             <a href="#">Our Donors</a>
@@ -450,21 +599,60 @@
 
                                                     </form>
                                                 </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary"
-                                                        data-bs-dismiss="modal">Close</button>
-                                                    <!-- Save Button will now submit the form -->
-                                                    <button type="submit" class="btn btn-primary"
-                                                        form="changePasswordForm">Save</button>
-                                                </div>
+
                                             </div>
+
                                         </div>
-                                    </div>
                                 @endif
+
                             </div>
+
+                            <script>
+                                document.addEventListener('DOMContentLoaded', function() {
+                                    var dropdownPairs = [{
+                                            toggle: 'dropdownToggle',
+                                            dropdown: 'Dropdown'
+                                        },
+                                        {
+                                            toggle: 'appdropdownToggle',
+                                            dropdown: 'appdropdown'
+                                        },
+                                        {
+                                            toggle: 'donorDropdownToggle',
+                                            dropdown: 'donorDropdown'
+                                        }
+                                    ];
+
+                                    dropdownPairs.forEach(function(pair) {
+                                        var toggle = document.getElementById(pair.toggle);
+                                        var dropdown = document.getElementById(pair.dropdown);
+
+                                        toggle.addEventListener('click', function(event) {
+                                            event.stopPropagation();
+                                            // Hide all dropdowns
+                                            dropdownPairs.forEach(function(p) {
+                                                document.getElementById(p.dropdown).style.display = 'none';
+                                            });
+                                            // Then toggle current
+                                            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+                                        });
+                                    });
+
+                                    // Close all on outside click
+                                    document.addEventListener('click', function() {
+                                        dropdownPairs.forEach(function(p) {
+                                            document.getElementById(p.dropdown).style.display = 'none';
+                                        });
+                                    });
+                                });
+                            </script>
                         </div>
+                        {{-- </div>
+                                @endif
+                            </div> --}}
                     </div>
-                </nav>
             </div>
-        </header>
+            </nav>
+    </div>
+    </header>
     </div>
