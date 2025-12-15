@@ -37,6 +37,20 @@ class WebsiteController extends Controller
     {
         return view('website.boardOfDirectors');
     }
+    public function documentchecklist1()
+    {
+        return view('website.documentChecklist1');
+    }
+    public function documentchecklist2()
+    {
+        return view('website.documentChecklist2');
+    }
+    public function documentchecklist3()
+    {
+        return view('website.documentChecklist3');
+    }
+
+    
     public function zoneChairmen()
     {
         return view('website.zoneChairmen');
@@ -62,6 +76,10 @@ class WebsiteController extends Controller
     public function beDonor()
     {
         return view('website.beDonor');
+    }
+    public function ourDonors()
+    {
+        return view('website.ourDonors');
     }
 
     public function book()

@@ -141,6 +141,196 @@
             color: #009846 !important;
             font-weight: 600;
         }
+
+        .pill.active a {
+            color: white;
+        }
+
+        .doc-list ol li {
+            font-size: 18px;
+            font-family: 'Poppins';
+        }
+
+        .green-dot {
+            /* display: inline-block; */
+            padding: 3px 7px;
+            border-radius: 50%;
+            background: #00a651;
+            color: white;
+            margin-left: 6px;
+            vertical-align: middle
+        }
+
+        :root {
+            --purple: #403092;
+            --accent: #ffca28;
+            /* warm yellow */
+            --muted: #6c6c6c;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #fff;
+            color: #333;
+        }
+
+        .page-wrap {
+            padding: 40px 20px;
+        }
+
+        /* Title */
+        .heading-line {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 18px;
+
+        }
+
+        .accent-bar {
+            width: 6px;
+            height: 40px;
+            background: linear-gradient(180deg, var(--accent), #ffd54a);
+            border-radius: 4px
+        }
+
+        .headline {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 10px
+        }
+
+        .headline h1 {
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            font-size: 34px
+        }
+
+        .headline .purple {
+            color: var(--purple)
+        }
+
+        .headline .yellow {
+            color: var(--accent);
+            font-weight: 700
+        }
+
+        .subtitle {
+            color: var(--muted);
+            font-size: 18px;
+            margin-bottom: 28px
+        }
+
+        /* Pill buttons */
+        .pills {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            flex-wrap: wrap;
+            margin-bottom: 30px
+        }
+
+        .pill {
+            padding: 10px 22px;
+            border-radius: 40px;
+            border: 2px solid var(--purple);
+            color: var(--purple);
+            display: inline-block;
+            font-size: 22px;
+        }
+
+        .pill.active {
+            background: var(--purple);
+            color: #fff;
+            border-color: var(--purple)
+        }
+
+        .pill a:hover {
+            color: var(--purple);
+        }
+
+        /* Lists */
+        .doc-list {
+            font-size: 15px;
+            color: #444;
+            line-height: 1.7
+        }
+
+        .doc-list ol {
+            padding-left: 18px;
+            margin: 0;
+            list-style-type: decimal !important;
+            list-style-position: outside !important;
+        }
+
+        /* Override global list styles */
+        body .doc-list ol {
+            list-style-type: decimal !important;
+            padding-left: 18px !important;
+            margin: 0 !important;
+        }
+
+        body .doc-list ol li {
+            list-style-type: decimal !important;
+            display: list-item !important;
+        }
+
+        .doc-list li {
+            margin-bottom: 8px
+        }
+
+        /* Two column card mimic */
+        .lists-wrap {
+            display: flex;
+            gap: 40px
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 991px) {
+            .headline h1 {
+                font-size: 28px
+            }
+
+            .lists-wrap {
+                flex-direction: column
+            }
+        }
+
+        @media (max-width:575px) {
+            .page-wrap {
+                padding: 20px 12px
+            }
+
+            .headline h1 {
+                font-size: 24px
+            }
+
+            .pills {
+                gap: 10px
+            }
+
+            .pill {
+                padding: 8px 14px;
+                font-size: 14px
+            }
+        }
+
+        /* subtle vertical center to numbers when columns stack */
+        .right-col {
+            border-left: 0
+        }
+
+        /* small circle download icons mimic */
+        .green-dot {
+            /* display: inline-block; */
+            padding: 4px;
+            border-radius: 50%;
+            background: #00a651;
+            color: white;
+            margin-left: 6px;
+            vertical-align: middle
+        }
     </style>
     <!-- Bootstrap JS and Popper.js (Bootstrap 4) -->
 
@@ -405,7 +595,7 @@
                                                             ">
 
                                                         <li class="">
-                                                            <a href="">DOCUMENTS</a>
+                                                            <a href="{{ route('documentchecklist1') }}">DOCUMENTS</a>
                                                         </li>
                                                         <li
                                                             class="{{ request()->routeIs('howtoapply') ? 'active' : '' }}">
@@ -450,7 +640,7 @@
                                                             <a href="{{ route('beDonor') }}">BE A DONOR</a>
                                                         </li>
                                                         <li class="">
-                                                            <a href="#">Our Donors</a>
+                                                            <a href="{{ route('ourDonors') }}">Our Donors</a>
                                                         </li>
                                                     </ul>
                                                 </li>
