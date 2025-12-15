@@ -44,12 +44,17 @@ Route::prefix('about')->group(function () {
     Route::get('/testimonials-and-Success-Stories', [WebsiteController::class, 'testimonialSuccessStories'])->name('testimonial&Success');
 });
 Route::prefix('application')->group(function () {
+    
+    Route::get('/document-checklist-1', [WebsiteController::class, 'documentchecklist1'])->name('documentchecklist1');
+    Route::get('/document-checklist-2', [WebsiteController::class, 'documentchecklist2'])->name('documentchecklist2');
+    Route::get('/document-checklist-3', [WebsiteController::class, 'documentchecklist3'])->name('documentchecklist3');
     Route::get('/DOCUMENTS', [WebsiteController::class, 'documents'])->name('documents');
     Route::get('/How-to-apply', [WebsiteController::class, 'howtoapply'])->name('howtoapply');
     Route::get('/FAQ’s', [WebsiteController::class, 'faqs'])->name('faqs');
 });
 Route::prefix('donors')->group(function () {
     Route::get('/be-a-donor', [WebsiteController::class, 'beDonor'])->name('beDonor');
+    Route::get('/our-donors', [WebsiteController::class, 'ourDonors'])->name('ourDonors');
 });
 
 //Route::post('/registeruser', [RegisterController::class, 'register'])->name('registeruser');
