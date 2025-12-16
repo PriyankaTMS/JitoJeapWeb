@@ -59,7 +59,7 @@
 
         @media (max-width: 768px) {
             .jitoMember p {
-                padding: 8px 0;
+                padding: 8px 10px;
             }
         }
 
