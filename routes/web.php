@@ -57,6 +57,7 @@ Route::prefix('donors')->group(function () {
     Route::get('/our-donors', [WebsiteController::class, 'ourDonors'])->name('ourDonors');
 });
 
+Route::get('/Gallery', [WebsiteController::class, 'gallery'])->name('gallery');
 //Route::post('/registeruser', [RegisterController::class, 'register'])->name('registeruser');
 
 Route::get('/showmsg', [WebsiteController::class, 'showmsg'])->name('showmsg');
