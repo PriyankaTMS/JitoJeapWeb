@@ -252,7 +252,6 @@
                             </div>
 
                             {{-- how to become JITO member Donor --}}
-
                             {{-- step 1  --}}
                             <div class="row p-3 jitoMember align-items-center">
                                 <div class="col-4 p-0 d-flex justify-content-start jitoMember-item1">

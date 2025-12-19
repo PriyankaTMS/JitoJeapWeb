@@ -137,6 +137,15 @@
             background-color: #f8f9fa;
         }
 
+        #donorDropdown li {
+            padding: 8px 15px;
+        }
+
+        #donorDropdown li:hover a {
+            color: #009846;
+            background-color: #f8f9fa;
+        }
+
         .navbar-nav .nav-item.active #appdropdownToggle span {
             color: #009846 !important;
             font-weight: 600;
@@ -246,9 +255,9 @@
             border-color: var(--purple)
         }
 
-        .pill a:hover {
+        /* .pill a:hover {
             color: var(--purple);
-        }
+        } */
 
         /* Lists */
         .doc-list {
@@ -564,7 +573,8 @@
 
                                                 </li>
                                                 <li class="d-none d-md-inline text-black px-2">|</li>
-                                                <li class="nav-item px-md-2 py-1 position-relative">
+                                                <li
+                                                    class="nav-item px-md-2 py-1 position-relative {{ request()->is('application/*') ? 'active' : '' }}">
                                                     <div id="appdropdownToggle"
                                                         class="d-flex text-black align-items-center"
                                                         style="cursor: pointer;">
@@ -611,7 +621,8 @@
 
                                                 </li>
                                                 <li class="d-none d-md-inline text-black px-2">|</li>
-                                                <li class="nav-item px-md-2 py-1 position-relative">
+                                                <li
+                                                    class="nav-item px-md-2 py-1 position-relative {{ request()->is('donors/*') ? 'active' : '' }}">
                                                     <div id="donorDropdownToggle"
                                                         class="d-flex text-black align-items-center"
                                                         style="cursor: pointer;">
@@ -624,49 +635,93 @@
 
                                                     <ul id="donorDropdown"
                                                         style="
-                                                                list-style:none;
-                                                                padding:10px;
-                                                                margin:0;
-                                                                background:white;
-                                                                border:1px solid #ccc;
-                                                                position:absolute;
-                                                                top:23px;
-                                                                left:0;
-                                                                min-width:150px;
-                                                                display:none;
-                                                                z-index:999;
-                                                            ">
+                        list-style: none;
+                        padding: 10px 0;
+                        margin:0;
+                        background:#ffffff;
+                        border:1px solid #ccc;
+                        border-radius: 8px;
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                        position:absolute;
+                        top:23px;
+                        left:0;
+                        min-width:200px;
+                        display:none;
+                        z-index:999;
+                        text-align: left;
+                    ">
                                                         <li class="">
-                                                            <a href="{{ route('beDonor') }}">BE A DONOR</a>
+                                                            <a href="{{ route('beDonor') }}"
+                                                                style="color: #515050 !important; text-decoration: none; font-family: 'Poppins', sans-serif !important; font-weight: 500; font-size: 16px; display: block; transition: all 0.3s ease;">BE
+                                                                A DONOR</a>
                                                         </li>
                                                         <li class="">
-                                                            <a href="{{ route('ourDonors') }}">Our Donors</a>
+                                                            <a href="{{ route('ourDonors') }}"
+                                                                style="color: #515050 !important; text-decoration: none; font-family: 'Poppins', sans-serif !important; font-weight: 500; font-size: 16px; display: block; transition: all 0.3s ease;">Our
+                                                                Donors</a>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li class="d-none d-md-inline text-black px-2">|</li>
 
-                                                <li class="nav-item px-md-2 py-1">
-                                                    <a class="nav-link text-black"
-                                                        href="{{ route('eventagenda') }}">EVENT AGENDA</a>
+                                                <li
+                                                    class="nav-item px-md-2 py-1 position-relative {{ request()->is('application/*') ? 'active' : '' }}">
+                                                    <div id="appdropdownToggle"
+                                                        class="d-flex text-black align-items-center"
+                                                        style="cursor: pointer;">
+                                                        <span>UNIVERSITY</span>
+                                                        <svg width="14" height="14" style="margin-left: 5px;">
+                                                            <path d="M2 4 L7 9 L12 4" stroke="black" stroke-width="2"
+                                                                fill="none" />
+                                                        </svg>
+                                                    </div>
+
+
+                                                    <ul id="appdropdown"
+                                                        style="
+                                                                list-style: none;
+                                                                padding: 10px 0;
+                                                                margin: 0;
+                                                                background: #ffffff;
+                                                                border: 1px solid #ccc;
+                                                                border-radius: 8px;
+                                                                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                                                                position: absolute;
+                                                                top: 23px;
+                                                                left: 0;
+                                                                min-width: 200px;
+                                                                display: none;
+                                                                z-index: 999;
+                                                                text-align: left;
+                                                            ">
+
+                                                        <li class="">
+                                                            <a href="{{ route('documentchecklist1') }}">DOCUMENTS</a>
+                                                        </li>
+                                                        <li
+                                                            class="{{ request()->routeIs('howtoapply') ? 'active' : '' }}">
+                                                            <a href="{{ route('howtoapply') }}">How to apply</a>
+                                                        </li>
+                                                        <li class="">
+                                                            <a href="">FAQ’s</a>
+                                                        </li>
+
+
+
+                                                    </ul>
+
                                                 </li>
                                                 <li class="d-none d-md-inline text-black px-2">|</li>
 
                                                 <li class="nav-item px-md-2 py-1">
                                                     <a class="nav-link text-black"
-                                                        href="{{ route('session_1_2_1') }}">ROM DIRECTORY</a>
+                                                        href="{{ route('gallery') }}">GALLERY</a>
                                                 </li>
                                                 <li class="d-none d-md-inline text-black px-2">|</li>
 
                                                 <li class="nav-item px-md-2 py-1">
                                                     <a class="nav-link text-black"
-                                                        href="{{ url('/#chapter') }}">CHAPTERS</a>
-                                                </li>
-                                                <li class="d-none d-md-inline text-black px-2">|</li>
-
-                                                <li class="nav-item px-md-2 py-1">
-                                                    <a class="nav-link text-black"
-                                                        href="{{ route('contact') }}">CONTACTS</a>
+                                                        href="{{ url('/#chapter') }}">CONTACT</a>
                                                 </li>
                                                 <!-- Visible only on small devices -->
                                                 <div class="d-block d-md-none">

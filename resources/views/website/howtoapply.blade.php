@@ -1,6 +1,81 @@
 @extends('website.layout.main')
 
 @section('content')
+    <style>
+        .jitoMember-item1 p {
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: clamp(16px, 2.67vw, 20px);
+            color: #5B5B5B;
+        }
+
+        .jitoMember-item3 p {
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: clamp(14px, 2.4vw, 18px);
+            color: #5B5B5B;
+
+        }
+
+
+        .jitoMember-item3 ul {
+            list-style-type: disc;
+            padding-left: clamp(15px, 4vw, 25px);
+            margin-top: 5px;
+            /* important for proper bullet alignment */
+        }
+
+        .jitoMember-item3 ul li {
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: clamp(14px, 2.4vw, 18px);
+            color: #5B5B5B;
+            padding-left: 10px;
+            display: list-item !important;
+            list-style-type: disc !important;
+        }
+
+        .jitoMember-item3 a {
+            text-decoration: underline;
+            color: #5B5B5B;
+        }
+
+        .numbering {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .numbering p {
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: clamp(32px, 6.4vw, 48px);
+            color: white;
+        }
+
+        .jitoMember {
+            padding: clamp(10px, 2vw, 15px);
+        }
+
+        @media (max-width: 768px) {
+            .jitoMember p {
+                padding: 8px 10px;
+            }
+        }
+
+        @media (max-width: 375px) {
+            .numbering {
+                height: 50px !important;
+                width: 50px !important;
+            }
+
+            .step-circle-container {
+                height: 60px !important;
+                width: 60px !important;
+                max-width: 60px !important;
+            }
+        }
+    </style>
     <section style="padding: 288px 0 80px 0px; background: #ffffff;">
         <div class="container" style="display: flex; flex-direction: column; gap: 30px;        max-width: 1400px;">
 
@@ -27,172 +102,152 @@
                 application form: www.jitojeap.in
             </p>
 
-            <!-- Timeline -->
-            <div class="timeline " style="margin-top:30px;">
+            {{-- step 1  --}}
+            <div class="row p-3 jitoMember align-items-center">
+                <div class="col-4 p-0 d-flex justify-content-start jitoMember-item1">
 
-                <!-- Step 1 (Right) -->
-                <div class="step "
-                    style="display: grid; grid-template-columns: 1fr auto 1fr; grid-template-areas: '. circle content'; align-items: center; margin-bottom: 40px;">
-                    <div class="circle"
-                        style="grid-area: circle; width: 100px; height: 100px; background: #4c63d2; border: 5px solid white; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold; position: relative;box-shadow: 1px 1px 1px 1px lightgray;">
-                        1
-                        <!-- Connector -->
-                        <div
-                            style="position: absolute; right: -100px; top: 50%; transform: translateY(-50%); width: 100px; height: 2px; background: repeating-linear-gradient(to right, #4c63d2 0 5px, transparent 5px 10px);">
-                        </div>
-                        <div
-                            style="position: absolute; right: -110px; top: 50%; transform: translateY(-50%); width: 10px; height: 10px; background: #4c63d2; border-radius: 50%;">
-                        </div>
-                    </div>
-                    <div class="content"
-                        style="grid-area: content; text-align: left; color: #5B5B5B; font-size: 16px; line-height: 1.5; padding-left: 120px;">
-                        Student have to go to google & search – https://jitojeap.in
-                    </div>
                 </div>
+                <div class="col-3 p-0 d-flex justify-content-center align-items-center jitoMember-item2">
 
-                <!-- Step 2 (Left) -->
-                <div class="step"
-                    style="display: grid; grid-template-columns: 1fr auto 1fr; grid-template-areas: 'content circle .'; align-items: center; margin-bottom: 40px;">
-                    <div class="content"
-                        style="grid-area: content; text-align: right; color: #5B5B5B; font-size: 16px; line-height: 1.5;">
-                        Explore website for understanding what actually JEAP does
-                    </div>
-                    <div class="circle"
-                        style="grid-area: circle; width: 100px; height: 100px; background: #28a745; border: 5px solid white;box-shadow: 1px 1px 1px 1px lightgray; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold; position: relative;">
-                        2
-                        <!-- Connector -->
-                        <div
-                            style="position: absolute; left: -100px; top: 50%; transform: translateY(-50%); width: 100px; height: 2px; background: repeating-linear-gradient(to left, #28a745 0 5px, transparent 5px 10px);">
-                        </div>
-                        <div
-                            style="position: absolute; left: -110px; top: 50%; transform: translateY(-50%); width: 10px; height: 10px; background: #28a745; border-radius: 50%;">
+                    <div class="col-8 p-0 step-circle-container"
+                        style="background-color:white;height:80px;max-width:80px;border-radius:50%;box-shadow:0px 1px 10px 0px rgba(0, 0, 0, 0.1);display:flex;justify-content:center;align-items:center;">
+                        <div class="numbering" style="background-color:#393186;height:70px;width:70px;border-radius:50%;">
+                            <p>1</p>
                         </div>
                     </div>
+                    <div class="col-2 p-0 ">
+                        <div class="dashedLine" style="border:3px dashed #393186;">
+                        </div>
+                    </div>
+                    <div class="col-2 p-0 align-items-center endDot">
+                        <div style="height: 15px;width: 15px;border-radius: 50%;background-color: #393186;">
+                        </div>
+                    </div>
+
                 </div>
-
-                <!-- Step 3 (Right) -->
-                <div class="step"
-                    style="display: grid; grid-template-columns: 1fr auto 1fr; grid-template-areas: '. circle content'; align-items: center; margin-bottom: 40px;">
-                    <div class="circle"
-                        style="grid-area: circle; width: 100px; height: 100px; background: #ffc107; border: 5px solid white;box-shadow: 1px 1px 1px 1px lightgray; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold; position: relative;">
-                        3
-                        <!-- Connector -->
-                        <div
-                            style="position: absolute; right: -100px; top: 50%; transform: translateY(-50%); width: 100px; height: 2px; background: repeating-linear-gradient(to right, #ffc107 0 5px, transparent 5px 10px);">
-                        </div>
-                        <div
-                            style="position: absolute; right: -110px; top: 50%; transform: translateY(-50%); width: 10px; height: 10px; background: #ffc107; border-radius: 50%;">
-                        </div>
-                    </div>
-                    <div class="content"
-                        style="grid-area: content; text-align: left; color: #5B5B5B; font-size: 16px; line-height: 1.5;">
-                        Who can apply for the Financial Assistance from JEAP? Click the link for FAQ's section.
-                    </div>
+                <div class="col-5 p-0 d-flex justify-content-center jitoMember-item3">
+                    <p>Student have to go to google & search - <a href="https://jitojeap.in"
+                            target="_blank">https://jitojeap.in</a> </p>
                 </div>
-
-                <!-- Step 4 (Left) -->
-                <div class="step"
-                    style="display: grid; grid-template-columns: 1fr auto 1fr; grid-template-areas: 'content circle .'; align-items: center; margin-bottom: 40px;">
-                    <div class="content"
-                        style="grid-area: content; text-align: right; color: #5B5B5B; font-size: 16px; line-height: 1.5;">
-                        You'll find list of documents according to the Financial Assistance you want to appear for i.e
-                        Foreign or Domestic
-                    </div>
-                    <div class="circle"
-                        style="grid-area: circle; width: 100px; height: 100px; background: #dc3545; border: 5px solid white;box-shadow: 1px 1px 1px 1px lightgray; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold; position: relative;">
-                        4
-                        <!-- Connector -->
-                        <div
-                            style="position: absolute; left: -100px; top: 50%; transform: translateY(-50%); width: 100px; height: 2px; background: repeating-linear-gradient(to left, #dc3545 0 5px, transparent 5px 10px);">
-                        </div>
-                        <div
-                            style="position: absolute; left: -110px; top: 50%; transform: translateY(-50%); width: 10px; height: 10px; background: #dc3545; border-radius: 50%;">
-                        </div>
-                    </div>
+            </div>
+            {{-- step 2  --}}
+            <div class="row p-3 jitoMember align-items-center">
+                <div class="col-4 p-0 d-flex justify-content-start jitoMember-item1">
+                    <p>Explore website for understanding what actually JEAP does</p>
                 </div>
-
-                <!-- Step 5 (Right) -->
-                <div class="step"
-                    style="display: grid; grid-template-columns: 1fr auto 1fr; grid-template-areas: '. circle content'; align-items: center; margin-bottom: 40px;">
-                    <div class="circle"
-                        style="grid-area: circle; width: 100px; height: 100px; background: #4c63d2; border: 5px solid white;box-shadow: 1px 1px 1px 1px lightgray; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold; position: relative;">
-                        5
-                        <!-- Connector -->
-                        <div
-                            style="position: absolute; right: -100px; top: 50%; transform: translateY(-50%); width: 100px; height: 2px; background: repeating-linear-gradient(to right, #4c63d2 0 5px, transparent 5px 10px);">
-                        </div>
-                        <div
-                            style="position: absolute; right: -110px; top: 50%; transform: translateY(-50%); width: 10px; height: 10px; background: #4c63d2; border-radius: 50%;">
+                <div class="col-3 p-0 d-flex justify-content-center align-items-center jitoMember-item2">
+                    <div class="col-2 p-0 d-flex justify-content-end align-items-center endDot">
+                        <div style="height: 15px;width: 15px;border-radius: 50%;background-color: #009846;">
                         </div>
                     </div>
-                    <div class="content"
-                        style="grid-area: content; text-align: left; color: #5B5B5B; font-size: 16px; line-height: 1.5;">
-                        Go through the list of Documents and keep ready all the documents before you start filling the
+                    <div class="col-2 p-0 ">
+                        <div class="dashedLine" style="border:3px dashed #009846;">
+                        </div>
+                    </div>
+
+                    <div class="col-8 p-0 step-circle-container"
+                        style="background-color:white;height:80px;max-width:80px;border-radius:50%;box-shadow:0px 1px 10px 0px rgba(0, 0, 0, 0.1);display:flex;justify-content:center;align-items:center;">
+                        <div class="numbering" style="background-color:#009846;height:70px;width:70px;border-radius:50%;">
+                            <p>2</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-5 jitoMember-item3">
+
+                </div>
+            </div>
+            {{-- step 3 --}}
+            <div class="row p-3 jitoMember align-items-center">
+                <div class="col-4 p-0 d-flex justify-content-start jitoMember-item1">
+
+                </div>
+                <div class="col-3 p-0 d-flex justify-content-center align-items-center jitoMember-item2">
+
+                    <div class="col-8 p-0 step-circle-container"
+                        style="background-color:white;height:80px;max-width:80px;border-radius:50%;box-shadow:0px 1px 10px 0px rgba(0, 0, 0, 0.1);display:flex;justify-content:center;align-items:center;">
+                        <div class="numbering" style="background-color:#FFD800;height:70px;width:70px;border-radius:50%;">
+                            <p>3</p>
+                        </div>
+                    </div>
+                    <div class="col-2 p-0 ">
+                        <div class="dashedLine" style="border:3px dashed #FFD800;">
+                        </div>
+                    </div>
+                    <div class="col-2 p-0 align-items-center endDot">
+                        <div style="height: 15px;width: 15px;border-radius: 50%;background-color: #FFD800;">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-5 jitoMember-item3">
+                    <p>Who can apply for the Financial Assistance from JEAP?
+                        Click the link for FAQ's section. FAQ's
+                    </p>
+
+                </div>
+            </div>
+
+            {{-- step 4  --}}
+            <div class="row p-3 jitoMember align-items-center">
+                <div class="col-4 p-0 d-flex justify-content-start jitoMember-item1">
+                    <p>You'll find List of documents according to the Financial Assistance you want to appear for i.e
+                        Foreign or Domestic</p>
+                </div>
+                <div class="col-3 p-0 d-flex justify-content-center align-items-center jitoMember-item2">
+                    <div class="col-2 p-0 d-flex justify-content-end align-items-center endDot">
+                        <div style="height: 15px;width: 15px;border-radius: 50%;background-color: #E31E24;">
+                        </div>
+                    </div>
+                    <div class="col-2 p-0 ">
+                        <div class="dashedLine" style="border:3px dashed #E31E24;">
+                        </div>
+                    </div>
+                    <div class="col-8 p-0 step-circle-container"
+                        style="background-color:white;height:80px;max-width:80px;border-radius:50%;box-shadow:0px 1px 10px 0px rgba(0, 0, 0, 0.1);display:flex;justify-content:center;align-items:center;">
+                        <div class="numbering" style="background-color:#E31E24;height:70px;width:70px;border-radius:50%;">
+                            <p>4</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-5 jitoMember-item3">
+                    <p>Send the completed form and necessary documents to the JEAP office.
+                    </p>
+
+                </div>
+            </div>
+            {{-- step 5  --}}
+            <div class="row p-3 jitoMember align-items-center">
+                <div class="col-4 p-0 d-flex justify-content-start jitoMember-item1">
+
+                </div>
+                <div class="col-3 p-0 d-flex justify-content-center align-items-center jitoMember-item2">
+
+                    <div class="col-8 p-0 step-circle-container"
+                        style="background-color:white;height:80px;max-width:80px;border-radius:50%;box-shadow:0px 1px 10px 0px rgba(0, 0, 0, 0.1);display:flex;justify-content:center;align-items:center;">
+                        <div class="numbering" style="background-color:#393186;height:70px;width:70px;border-radius:50%;">
+                            <p>5</p>
+                        </div>
+                    </div>
+                    <div class="col-2 p-0 ">
+                        <div class="dashedLine" style="border:3px dashed #393186;">
+                        </div>
+                    </div>
+                    <div class="col-2 p-0 align-items-center endDot">
+                        <div style="height: 15px;width: 15px;border-radius: 50%;background-color: #393186;">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-5 jitoMember-item3">
+                    <p>Go through the list of Documents and keep ready all the documents before you start filling the
                         application
-                    </div>
-                </div>
+                    </p>
 
-                <!-- Step 6 (Left) -->
-                <div class="step"
-                    style="display: grid; grid-template-columns: 1fr auto 1fr; grid-template-areas: 'content circle .'; align-items: center; margin-bottom: 40px;">
-                    <div class="content"
-                        style="grid-area: content; text-align: right; color: #5B5B5B; font-size: 16px; line-height: 1.5;">
-                        Once you are ready with all your documents you have to fill (Personal Details, Family Details,
-                        Education Details, Funding Details, Guarantor Details, Documents & Submit Section)
-                    </div>
-                    <div class="circle"
-                        style="grid-area: circle; width: 100px; height: 100px; background: #28a745; border: 5px solid white;box-shadow: 1px 1px 1px 1px lightgray; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold; position: relative;">
-                        6
-                        <!-- Connector -->
-                        <div
-                            style="position: absolute; left: -100px; top: 50%; transform: translateY(-50%); width: 100px; height: 2px; background: repeating-linear-gradient(to left, #28a745 0 5px, transparent 5px 10px);">
-                        </div>
-                        <div
-                            style="position: absolute; left: -110px; top: 50%; transform: translateY(-50%); width: 10px; height: 10px; background: #28a745; border-radius: 50%;">
-                        </div>
-                    </div>
                 </div>
-
-                <!-- Step 7 (Right) -->
-                <div class="step"
-                    style="display: grid; grid-template-columns: 1fr auto 1fr; grid-template-areas: '. circle content'; align-items: center; margin-bottom: 40px;">
-                    <div class="circle"
-                        style="grid-area: circle; width: 100px; height: 100px; background: #ffc107; border: 5px solid white;box-shadow: 1px 1px 1px 1px lightgray; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold; position: relative;">
-                        7
-                        <!-- Connector -->
-                        <div
-                            style="position: absolute; right: -100px; top: 50%; transform: translateY(-50%); width: 100px; height: 2px; background: repeating-linear-gradient(to right, #ffc107 0 5px, transparent 5px 10px);">
-                        </div>
-                        <div
-                            style="position: absolute; right: -110px; top: 50%; transform: translateY(-50%); width: 10px; height: 10px; background: #ffc107; border-radius: 50%;">
-                        </div>
-                    </div>
-                    <div class="content"
-                        style="grid-area: content; text-align: left; color: #5B5B5B; font-size: 16px; line-height: 1.5;">
-                        For any queries do mail us on support.jitojeap@jito.org You'll get reply within 24 to 48 hours
-                    </div>
-                </div>
-
-                <!-- Step 8 (Left) -->
-                <div class="step"
-                    style="display: grid; grid-template-columns: 1fr auto 1fr; grid-template-areas: 'content circle .'; align-items: center; margin-bottom: 40px;">
-                    <div class="content"
-                        style="grid-area: content; text-align: right; color: #5B5B5B; font-size: 16px; line-height: 1.5;">
-                        JEAP working hours are 9am to 5pm from MON – FRI
-                    </div>
-                    <div class="circle"
-                        style="grid-area: circle; width: 100px; height: 100px; background: #dc3545; border: 5px solid white;box-shadow: 1px 1px 1px 1px lightgray; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold; position: relative;">
-                        8
-                        <!-- Connector -->
-                        <div
-                            style="position: absolute; left: -100px; top: 50%; transform: translateY(-50%); width: 100px; height: 2px; background: repeating-linear-gradient(to left, #dc3545 0 5px, transparent 5px 10px);">
-                        </div>
-                        <div
-                            style="position: absolute; left: -110px; top: 50%; transform: translateY(-50%); width: 10px; height: 10px; background: #dc3545; border-radius: 50%;">
-                        </div>
-                    </div>
-                </div>
-
             </div>
 
         </div>

@@ -49,6 +49,10 @@ class WebsiteController extends Controller
     {
         return view('website.documentChecklist3');
     }
+    public function gallery()
+    {
+        return view('website.gallery');
+    }
 
     
     public function zoneChairmen()
