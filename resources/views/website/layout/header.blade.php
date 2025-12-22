@@ -137,6 +137,47 @@
             background-color: #f8f9fa;
         }
 
+        #universitydropdown {
+            list-style: none;
+            padding: 10px 0;
+            margin: 0;
+            background: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            position: absolute;
+            top: 23px;
+            left: 0;
+            min-width: 200px;
+            display: none;
+            z-index: 999;
+            text-align: left;
+        }
+
+        #universitydropdown li {
+            padding: 8px 15px;
+        }
+
+        #universitydropdown li a {
+            color: #515050 !important;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif !important;
+            font-weight: 500;
+            font-size: 16px;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        #universitydropdown li.active a {
+            color: #009846 !important;
+            font-weight: 600;
+        }
+
+        #universitydropdown li:hover a {
+            color: #009846;
+            background-color: #f8f9fa;
+        }
+
         #donorDropdown li {
             padding: 8px 15px;
         }
@@ -147,6 +188,11 @@
         }
 
         .navbar-nav .nav-item.active #appdropdownToggle span {
+            color: #009846 !important;
+            font-weight: 600;
+        }
+
+        .navbar-nav .nav-item.active #universitydropdownToggle span {
             color: #009846 !important;
             font-weight: 600;
         }
@@ -339,6 +385,31 @@
             color: white;
             margin-left: 6px;
             vertical-align: middle
+        }
+
+        @media (max-width: 768px) {
+            .jitoMember p {
+                padding: 8px 10px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 10px 0 40px 0px !important;
+            }
+        }
+
+        @media (max-width: 375px) {
+            .numbering {
+                height: 50px !important;
+                width: 50px !important;
+            }
+
+            .step-circle-container {
+                height: 60px !important;
+                width: 60px !important;
+                max-width: 60px !important;
+            }
         }
     </style>
     <!-- Bootstrap JS and Popper.js (Bootstrap 4) -->
@@ -611,8 +682,8 @@
                                                             class="{{ request()->routeIs('howtoapply') ? 'active' : '' }}">
                                                             <a href="{{ route('howtoapply') }}">How to apply</a>
                                                         </li>
-                                                        <li class="">
-                                                            <a href="">FAQ’s</a>
+                                                        <li class="{{ request()->routeIs('faqs') ? 'active' : '' }}">
+                                                            <a href="{{ route('faqs') }}">FAQ’s</a>
                                                         </li>
 
 
@@ -635,27 +706,29 @@
 
                                                     <ul id="donorDropdown"
                                                         style="
-                        list-style: none;
-                        padding: 10px 0;
-                        margin:0;
-                        background:#ffffff;
-                        border:1px solid #ccc;
-                        border-radius: 8px;
-                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-                        position:absolute;
-                        top:23px;
-                        left:0;
-                        min-width:200px;
-                        display:none;
-                        z-index:999;
-                        text-align: left;
-                    ">
-                                                        <li class="">
+                                                                list-style: none;
+                                                                padding: 10px 0;
+                                                                margin:0;
+                                                                background:#ffffff;
+                                                                border:1px solid #ccc;
+                                                                border-radius: 8px;
+                                                                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                                                                position:absolute;
+                                                                top:23px;
+                                                                left:0;
+                                                                min-width:200px;
+                                                                display:none;
+                                                                z-index:999;
+                                                                text-align: left;
+                                                            ">
+                                                        <li
+                                                            class="{{ request()->routeIs('beDonor') ? 'active' : '' }}">
                                                             <a href="{{ route('beDonor') }}"
                                                                 style="color: #515050 !important; text-decoration: none; font-family: 'Poppins', sans-serif !important; font-weight: 500; font-size: 16px; display: block; transition: all 0.3s ease;">BE
                                                                 A DONOR</a>
                                                         </li>
-                                                        <li class="">
+                                                        <li
+                                                            class="{{ request()->routeIs('ourDonors') ? 'active' : '' }}">
                                                             <a href="{{ route('ourDonors') }}"
                                                                 style="color: #515050 !important; text-decoration: none; font-family: 'Poppins', sans-serif !important; font-weight: 500; font-size: 16px; display: block; transition: all 0.3s ease;">Our
                                                                 Donors</a>
@@ -665,8 +738,8 @@
                                                 <li class="d-none d-md-inline text-black px-2">|</li>
 
                                                 <li
-                                                    class="nav-item px-md-2 py-1 position-relative {{ request()->is('application/*') ? 'active' : '' }}">
-                                                    <div id="appdropdownToggle"
+                                                    class="nav-item px-md-2 py-1 position-relative {{ request()->is('university/*') ? 'active' : '' }}">
+                                                    <div id="universitydropdownToggle"
                                                         class="d-flex text-black align-items-center"
                                                         style="cursor: pointer;">
                                                         <span>UNIVERSITY</span>
@@ -677,7 +750,7 @@
                                                     </div>
 
 
-                                                    <ul id="appdropdown"
+                                                    <ul id="universitydropdown"
                                                         style="
                                                                 list-style: none;
                                                                 padding: 10px 0;
@@ -695,15 +768,14 @@
                                                                 text-align: left;
                                                             ">
 
-                                                        <li class="">
-                                                            <a href="{{ route('documentchecklist1') }}">DOCUMENTS</a>
+
+                                                        <li
+                                                            class="{{ request()->routeIs('Domestic') ? 'active' : '' }}">
+                                                            <a href="{{ route('domestic') }}">Domestic</a>
                                                         </li>
                                                         <li
-                                                            class="{{ request()->routeIs('howtoapply') ? 'active' : '' }}">
-                                                            <a href="{{ route('howtoapply') }}">How to apply</a>
-                                                        </li>
-                                                        <li class="">
-                                                            <a href="">FAQ’s</a>
+                                                            class="{{ request()->routeIs('foreign') ? 'active' : '' }}">
+                                                            <a href="{{ route('foreign') }}">Foreign</a>
                                                         </li>
 
 
@@ -865,6 +937,10 @@
                                         {
                                             toggle: 'donorDropdownToggle',
                                             dropdown: 'donorDropdown'
+                                        },
+                                        {
+                                            toggle: 'universitydropdownToggle',
+                                            dropdown: 'universitydropdown'
                                         }
                                     ];
 

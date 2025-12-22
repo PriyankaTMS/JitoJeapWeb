@@ -86,6 +86,15 @@ class WebsiteController extends Controller
         return view('website.ourDonors');
     }
 
+    public function domestic()
+    {
+        return view('website.domestic');
+    }
+    public function foreign()
+    {
+        return view('website.foreign');
+    }
+
     public function book()
     {
         return view('website.book');

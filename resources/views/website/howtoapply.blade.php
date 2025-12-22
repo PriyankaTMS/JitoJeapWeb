@@ -104,12 +104,14 @@
 
             {{-- step 1  --}}
             <div class="row p-3 jitoMember align-items-center">
-                <div class="col-4 p-0 d-flex justify-content-start jitoMember-item1">
+                <div class="col-4 ">
 
                 </div>
-                <div class="col-3 p-0 d-flex justify-content-center align-items-center jitoMember-item2">
+                <div class="col-4 p-0 d-flex justify-content-center align-items-center jitoMember-item2">
+                    <div class="col-3">
 
-                    <div class="col-8 p-0 step-circle-container"
+                    </div>
+                    <div class="col-6 p-0 step-circle-container"
                         style="background-color:white;height:80px;max-width:80px;border-radius:50%;box-shadow:0px 1px 10px 0px rgba(0, 0, 0, 0.1);display:flex;justify-content:center;align-items:center;">
                         <div class="numbering" style="background-color:#393186;height:70px;width:70px;border-radius:50%;">
                             <p>1</p>
@@ -119,13 +121,13 @@
                         <div class="dashedLine" style="border:3px dashed #393186;">
                         </div>
                     </div>
-                    <div class="col-2 p-0 align-items-center endDot">
+                    <div class="col-1 p-0 align-items-center endDot">
                         <div style="height: 15px;width: 15px;border-radius: 50%;background-color: #393186;">
                         </div>
                     </div>
 
                 </div>
-                <div class="col-5 p-0 d-flex justify-content-center jitoMember-item3">
+                <div class="col-4 p-0 d-flex justify-content-center jitoMember-item3">
                     <p>Student have to go to google & search - <a href="https://jitojeap.in"
                             target="_blank">https://jitojeap.in</a> </p>
                 </div>
@@ -135,8 +137,8 @@
                 <div class="col-4 p-0 d-flex justify-content-start jitoMember-item1">
                     <p>Explore website for understanding what actually JEAP does</p>
                 </div>
-                <div class="col-3 p-0 d-flex justify-content-center align-items-center jitoMember-item2">
-                    <div class="col-2 p-0 d-flex justify-content-end align-items-center endDot">
+                <div class="col-4  p-0 d-flex justify-content-center align-items-center jitoMember-item2">
+                    <div class="col-1 p-0 d-flex justify-content-end align-items-center endDot">
                         <div style="height: 15px;width: 15px;border-radius: 50%;background-color: #009846;">
                         </div>
                     </div>
@@ -145,16 +147,16 @@
                         </div>
                     </div>
 
-                    <div class="col-8 p-0 step-circle-container"
+                    <div class="col-6 p-0 step-circle-container"
                         style="background-color:white;height:80px;max-width:80px;border-radius:50%;box-shadow:0px 1px 10px 0px rgba(0, 0, 0, 0.1);display:flex;justify-content:center;align-items:center;">
                         <div class="numbering" style="background-color:#009846;height:70px;width:70px;border-radius:50%;">
                             <p>2</p>
                         </div>
                     </div>
-
+                    <div class="col-3"></div>
 
                 </div>
-                <div class="col-5 jitoMember-item3">
+                <div class="col-4 jitoMember-item3">
 
                 </div>
             </div>
@@ -163,9 +165,9 @@
                 <div class="col-4 p-0 d-flex justify-content-start jitoMember-item1">
 
                 </div>
-                <div class="col-3 p-0 d-flex justify-content-center align-items-center jitoMember-item2">
-
-                    <div class="col-8 p-0 step-circle-container"
+                <div class="col-4 p-0 d-flex justify-content-center align-items-center jitoMember-item2">
+                    <div class="col-3"></div>
+                    <div class="col-6 p-0 step-circle-container"
                         style="background-color:white;height:80px;max-width:80px;border-radius:50%;box-shadow:0px 1px 10px 0px rgba(0, 0, 0, 0.1);display:flex;justify-content:center;align-items:center;">
                         <div class="numbering" style="background-color:#FFD800;height:70px;width:70px;border-radius:50%;">
                             <p>3</p>
@@ -175,13 +177,13 @@
                         <div class="dashedLine" style="border:3px dashed #FFD800;">
                         </div>
                     </div>
-                    <div class="col-2 p-0 align-items-center endDot">
+                    <div class="col-1 p-0 align-items-center endDot">
                         <div style="height: 15px;width: 15px;border-radius: 50%;background-color: #FFD800;">
                         </div>
                     </div>
 
                 </div>
-                <div class="col-5 jitoMember-item3">
+                <div class="col-4 jitoMember-item3">
                     <p>Who can apply for the Financial Assistance from JEAP?
                         Click the link for FAQ's section. FAQ's
                     </p>
@@ -195,8 +197,8 @@
                     <p>You'll find List of documents according to the Financial Assistance you want to appear for i.e
                         Foreign or Domestic</p>
                 </div>
-                <div class="col-3 p-0 d-flex justify-content-center align-items-center jitoMember-item2">
-                    <div class="col-2 p-0 d-flex justify-content-end align-items-center endDot">
+                <div class="col-4 p-0 d-flex justify-content-center align-items-center jitoMember-item2">
+                    <div class="col-1 p-0 d-flex justify-content-end align-items-center endDot">
                         <div style="height: 15px;width: 15px;border-radius: 50%;background-color: #E31E24;">
                         </div>
                     </div>
@@ -204,16 +206,17 @@
                         <div class="dashedLine" style="border:3px dashed #E31E24;">
                         </div>
                     </div>
-                    <div class="col-8 p-0 step-circle-container"
+                    <div class="col-6 p-0 step-circle-container"
                         style="background-color:white;height:80px;max-width:80px;border-radius:50%;box-shadow:0px 1px 10px 0px rgba(0, 0, 0, 0.1);display:flex;justify-content:center;align-items:center;">
                         <div class="numbering" style="background-color:#E31E24;height:70px;width:70px;border-radius:50%;">
                             <p>4</p>
                         </div>
                     </div>
+                    <div class="col-3"></div>
 
 
                 </div>
-                <div class="col-5 jitoMember-item3">
+                <div class="col-4 jitoMember-item3">
                     <p>Send the completed form and necessary documents to the JEAP office.
                     </p>
 
@@ -224,9 +227,10 @@
                 <div class="col-4 p-0 d-flex justify-content-start jitoMember-item1">
 
                 </div>
-                <div class="col-3 p-0 d-flex justify-content-center align-items-center jitoMember-item2">
+                <div class="col-4 p-0 d-flex justify-content-center align-items-center jitoMember-item2">
+                    <div class="col-3"></div>
 
-                    <div class="col-8 p-0 step-circle-container"
+                    <div class="col-6 p-0 step-circle-container"
                         style="background-color:white;height:80px;max-width:80px;border-radius:50%;box-shadow:0px 1px 10px 0px rgba(0, 0, 0, 0.1);display:flex;justify-content:center;align-items:center;">
                         <div class="numbering" style="background-color:#393186;height:70px;width:70px;border-radius:50%;">
                             <p>5</p>
@@ -236,13 +240,13 @@
                         <div class="dashedLine" style="border:3px dashed #393186;">
                         </div>
                     </div>
-                    <div class="col-2 p-0 align-items-center endDot">
+                    <div class="col-1 p-0 align-items-center endDot">
                         <div style="height: 15px;width: 15px;border-radius: 50%;background-color: #393186;">
                         </div>
                     </div>
 
                 </div>
-                <div class="col-5 jitoMember-item3">
+                <div class="col-4 jitoMember-item3">
                     <p>Go through the list of Documents and keep ready all the documents before you start filling the
                         application
                     </p>
